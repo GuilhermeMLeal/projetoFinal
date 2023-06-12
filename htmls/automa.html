@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/CSS/automa.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair&family=Wix+Madefor+Display&display=swap');
     </style>
@@ -18,7 +19,7 @@
         </div>
         <nav>
             <ul>
-                <a href="#title"><il>INÍCIO</il></a>
+                <a href="/htmls/home.html"><il>HOME</il></a>
                 <a href="#nada1"><il>SOBRE</il></a>
                 <a href="#nada2"><il>MATÉRIAS</il></a>
                 <a href="#" id="projetos"><il>PROJETOS</il></a>
@@ -52,16 +53,19 @@
         </details>
         <details>
                 <summary>Conceitos aplicados a Indústria </summary>
-                <div id="portas">
+                <div id="tinker">
                     <p>O conhecimento foi feito a partir da utilização e reconhecimento de sensores, resistores, led's e CLP's(Controladores Lógicos Programáveis) .</p>
                     <div>
                         <p>Os principais sensores aprendidos foram o sensor capacitivo (detecta qualquer peça e tipo de material perto dele), indutivo (detecta qualquer peça metálica), sensor óptico (detecta qualquer uma que projete um reflexo) e o sensor ultrassônico (detecta detectar a presença de objetos e medir a distância dos mesmos) </p>
-                        <video width="700" height="700" controls>
-                            <source src="/imgs/automacao/exemplo arduino1.mp4" type="video/mp4">
-                        </video>
-                            <p>Aqui está uma aplicação de um sensor ultrassônico com a linguagem C, sendo efetuada no software TinkerCad.</p>
+                        <div id="video">
+                            <video width="700" height="700" controls>
+                                <source src="/imgs/automacao/exemplo arduino1.mp4" type="video/mp4">
+                            </video>
+                                <p >Aqui está uma aplicação de um sensor ultrassônico com a linguagem C, sendo efetuada no software TinkerCad.</p>
+                        </div>
                         
-                        <figure>
+                        
+                        <figure id="tinkercad">
                             <img src="/imgs/automacao/TINKERCAD.png" alt="">
                             <figcaption>Utilizando a lógica (linguagem C) e um circuito elétrico com led, resistor , portas input e output do arduino, pude perceber e compreender assuntos que foram trabalhados em JavaScript em outra linguagem jutno com a automação industrial.</figcaption>
                         </figure>
@@ -70,16 +74,41 @@
         </details>
         <details>
             <summary>CLP's e Robôs</summary>
-            <div id="portas">
-                <p>Além da parte lógica, também vimos um pouco sobre a parte robótica na qual percebemos a utilização de robôs autônomos e programáveis .</p>
+            <div id="robotica">
+                <p>Além da parte lógica, também vimos um pouco sobre a parte robótica na qual percebemos a utilização de robôs autônomos e programáveis. Eles trabalham juntos com CLP's para um conjunto de tarefas que exigem movimentos contínuos e integrados com várias partes distintas juntas (esteiras, atuadores, motores, produtos, braço robótico e entre muitos outros)</p>
+                <img src="/imgs/automacao/linha.png" alt="" id="linha">
+                <p>Antes de ver exemplos práticos devemos lembrar das 3 leis de robótica segundo Isaac Asimov</p>
+                <ul>
+                    <il>->Primeira lei: um robô não pode ser feito para permitir que um ser humano sofra algum mal.</il><br>
+                    <il>->Segunda lei : os robôs precisam obedecer as ordens humanas, exceto quando essas ordens entrarem em conflito com a primeira lei.</il><br>
+                    <il>->Terceira lei : um robô deve proteger sua própria existência, desde que não entre em conflito com as leis anteriores.</il>
+                </ul>
+                <p>Aprendemos o básico de robótica com os diferentes tipos de robôs (SCARA, COLABORATIVO, CILÍNDRICO, CARTESIANO, ARTICULADO).Uma breve explicação seria: </p>
+                <ul>
+                    <il>->SCARA = possui braços articulados com juntas que se movem em formato de "S" ou "C"(ideais para aplicações que exigem movimentos rápidos e precisos em um plano horizontal). </il><br><br>
+                    <il>->COLABORATIVO (cobots) = são robôs projetados para trabalhar de forma segura ao lado dos seres humanos.</il><br><br>
+                    <il>->CILÍNDRICOS =  possui um braço em forma de cilindro que pode se mover em um intervalo circular ao redor de uma base fixa(ideais para pick and place, soldagem e montagem)</il><br><br>
+                    <il>->CARTESIANO = possui três eixos lineares que se movem ao longo dos eixos cartesianos X, Y e Z( efetuam movimentos lineares e precisão ). </il><br><br>
+                    <il>->ARTICULADOS = possui vários braços articulados conectados por juntas giratórias e são ideais para mover em múltiplas direções.</il>
+                </ul>
+                <img src="/imgs/automacao/tipos de robos.png" alt=""id="tipos">
+                <p>Além de assuntos específicos, como:</p>    
+                <ul>
+                    <il>->Movimentos dos robôs pela lógica programada</il><br><br>
+                    <il>->Limites na ponta do robô(payload=capacidade de carga)</il><br><br>
+                    <il>->Precisão(repetitividade em uma operação e obter um valor próximo de 100% de aproveitamento)</il><br><br>
+                    <il>->Acurácia (mede a taxa de acerto do modelo)</il>
+                </ul>
+                    
+
                 <div>
                     <h3>Video que representa a utilização e movimentação do robô no plano cartesiano.</h3>
                                 <video width="700" height="700" controls>
                                 <source src="/imgs/automacao/cosimir.mp4" type="video/mp4">
                                 <figcaption>Video que representa a utilização e movimentação do robô no plano cartesiano.</figcaption>
                     <figure>
-                        <img src="/imgs/automacao/portas l1.jpg" alt="">
-                        <figcaption>Utilização e criação de um circuito com Portas AND , OR e NOT, nas quais de acordo com uma mudança nos estados das entradas a saída irá ser True ou False.</figcaption>
+                        <img src="/imgs/automacao/Captura de tela 2023-06-12 133334.png" alt="">
+                        <figcaption>Aqui foi a programação feita a m</figcaption>
                     </figure>
                 </div>
             </div>

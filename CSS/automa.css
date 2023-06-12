@@ -1,0 +1,102 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color:white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#apresentação{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 10px;
+}
+main{
+    font-size: 18px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#portas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#portas figure{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+#portas img{
+    width: 600px;
+}
+#tinker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#tinker p{
+    font-size: 20px;
+}
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#tinkercad{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+#tinkercad img{
+    width: 800px;
+}
+#robotica{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+#linha{
+    width: 500px;
+    height: 400px;
+}
+#robotica p{
+    font-size: 18px;
+}
+#tipos{
+    width: 700px;
+    height: 300px;
+}
