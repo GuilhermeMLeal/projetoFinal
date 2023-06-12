@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/CSS/media.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Document</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair&family=Wix+Madefor+Display&display=swap');
+    </style>
+<body>
+    <header >   
+        <div id="title">
+            <div class="loader">
+            </div>
+            <h1>MARTINS</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="#title"><il>INÍCIO</il></a>
+                <a href="#nada1"><il>SOBRE</il></a>
+                <a href="#nada2"><il>MATÉRIAS</il></a>
+                <a href="#" id="projetos"><il>PROJETOS</il></a>
+                <il><input type="checkbox" id="troca_cor"><il>
+                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Banco de Dados</h1>
+            <h2>Afinal, o que são?</h2>
+            <h3>Banco de Dados ou Data Base são estruturas físicas, nas quais dados e informações são mantidas por um período incerto de tempo e são utilizadas para algum propósito, principalmente feito para lidar com grandes volumes de informações e oferecer recursos para garantir a integridade, segurança e disponibilidade dos dados de um algumas instituição.</h3>
+        </div>
+        <div>
+            <h2>Tipos e conceitos sobre DB's</h2>
+            <h3>Basicamente, em Banco de Dados nós possuímos uma gama imensa de tipos e diferentes formas de trabalhar. Essa gama normalmente é trabalhada e com as devidas plataformas, conhecidas como SGBD's (Sistema de Gerenciamento de Banco de Dados), estando no mercado de forma paga ou gratuita. Essa gama de tipos de Bancos são representadas por Banco Orientado a Objeto, Autônomo, Documentos, em Cache, em Cloud, porém irei apresentar 2 que foram enfatizados no semestre, sendo eles:</h3>
+            <div id="SQL">
+                <div>
+                    <h3>Bancos de dados relacional(SQL)</h3>
+                    <h3>Como seu próprio nome nos diz, é um banco de consulta estruturada. Essa consulta nos remete uma ideia de organização e estruturação de dados, pois com ele podemos perceber em que lugar esses dados estão alocados (tables/tabelas) e com a devida consulta, ver em que parâmetro está essa informação (column/coluna) e linha. Os seus mais conhecidos SGBD's são:  </h3>
+                </div>
+                <img src="/imgs/banco/Screenshot 2023-06-09 013253.png " alt="">
+            </div>
+            <div id="NoSQL">
+                <div>
+                    <h3>Bancos de dados não relacional(NoSQL)</h3>
+                    <h3>Nele se existe uma distinção, pois permite que dados não estruturados e semiestruturados sejam armazenados e manipulados (diferemte de um banco de dados relacional, que define como todos os dados inseridos no banco de dados devem ser compostos). Eles ganharam força pela gama de proporção de dados, pois podem se adaptar e obter uma certa flexibilidade. Principais tipos são: </h3>
+                </div>
+                <img src="/imgs/banco/nosql.png" alt="">
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <h2>Antes de entender a programação e efetuar consultas, vale ressaltar alguns conceitos básicos: </h2>
+                <ul>
+                    <il>Tabelas = Relação entre entidades e suas referências, representado por linhas e colunas.</il>
+                    <il>Colunas = É um característica para atribuição de dados , como se fossem um domínio de uma tabela.</il>
+                    <il>Linhas = Valor de atribuição para essas colunas, como se fosse um cadastro e seus campos. São representados por Tuplas(grupo de linhas, compondo uma tabela preenchida)</il>
+                    <il>Regra de negócio (RN) ou Minimundo = Pedaço da realidade, no qual o banco vai tentar solucionar (Esquemetização da realida)</il>
+                    <il>Abstração = Fracionar o minimundo em porções e seleciona características de objetos e situações. Quanto mais abstraido, melhor será de formar o Banco</il>
+                </ul>
+                <h3>No banco nós temos 3 tipos de modelos:</h3>
+                <div>
+                    <div>
+                        <h3>Modelo Conceitual</h3>
+                        <p> É um modelo de alto nível, no qual está mais próximo da realidade dos usuários. O esquema conceitual oculta os detalhes das estruturas de armazenamento físico e se concentra na descrição de entidades, tipos de dados, conexões, operações de usuários e restrições.Sendo representado por 2 tipos: </p>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="/imgs/banco/DML.png" alt="">
+                            <figcaption>DER – Diagrama de Entidade e Relacionamento</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/imgs/banco/UML.png" alt="">
+                            <figcaption>Diagrama de Classes da UML</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <h3>Modelo Lógico</h3>
+                    <p>Ele descreve como os dados serão armazenados no banco e também seus relacionamentos, suas formas lógicas de estruturas (Relações, entidades, hierarquia) e delas são feitas as representações gráficas (Tabelas, campos, Primary Key(Chave primária) e Foreign Key(Chave Estrangeira))</p>
+                    <div>
+                        <figure>
+                            <img src="/imgs/banco/MODELO LOGICO.png" alt="">
+                            <figcaption>Tabelas em um Banco de Dados Relacional, com suas devidas colunas(atributos de dados / campos de uma tabela) e linhas(Valor de atributos de um campo de uma tabela)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <h3>Modelo de Implementação (ou Físico)</h3>
+                    <p>Ele descreve, por meio de alguma linguagem, como será feita a armazenagem no banco, requisitos de tratamento de dados e utilização do mesmo. Nele que a gente tem a utilização de SGBD, para essa criação, um exemplo é:  </p>
+                    <div>
+                    <div>
+                        <figure>
+                            <img src="/imgs/banco/exemplo banco.png" alt="">
+                            <figcaption>Criação de tabela com suas devidas restrições e atributos, nos quais serão utilizados posteriormente.</figcaption>
+                            </figure>
+                    </div>
+                </div>
+                <h3>Modelos e criação de Banco de Dados:</h3>
+                <h3>MER e DER</h3>
+                <p>MER é  um modelo conceitual utilizado para descrever os objetos (entidades) envolvidos em um domínio de negócios, com suas características (atributos) e como elas se relacionam entre si (relacionamentos).</p>
+              
+                <div id="entidade">
+                    <h3>Entidade</h3>
+                    <p>Entidades:Os objetos ou partes envolvidas um domínio, também chamados de entidades, podem ser classificados como físicos ou lógicos, de acordo sua existência no mundo real.</p>
+                    <img src="/imgs/banco/entidade.png" alt="">
+                </div>
+                <div id="relacionamento">
+                    <h3>Relacionamento</h3>
+                    <p>Relacionamento é basicamente a interação de entidades, são nomeados com verbos ou expressões que representam a ação de uma para outra, como também seu relacionamento.Esse relacionamento pode ser representado de duas formas: Forte e Fraco</p>
+                    <ul>
+                        <il>Relacionamento forte = Se a entidade a qual possui um relacionamento for uma entidade com valor igual(forte - forte / fraco - fraco) usa-se um RELACIONAMENTO FORTE </il>
+                        <il>Relacionamento fraco = Caso se a entidade for distinta (forte - fraca)</il>
+                    </ul>
+                    <p>Além, da Cardinalidade que é a relação de entidade para entidade, juntamenet com o relacionamento.</p>
+                    <img src="/imgs/banco/relacionamento.png" alt="">
+                </div>
+                <div id="atributo">
+                    <h3>Atributo</h3>
+                    <p>É uma característica ou propriedade que descreve uma entidade ou objeto. Em termos mais simples, um atributo é uma coluna em uma tabela de banco de dados. Cada registro (linha) em uma tabela terá valores correspondentes para cada atributo.</p>
+                    <img src="/imgs/banco/atributo.png" alt="">
+                <div>
+                    <h3>DER</h3>
+                    <p>O Diagrama Entidade Relacionamento é a representação gráfica do MER, ou seja, representa tudo o que já foi visto, mas em um esquema só. Veja como seria um exemplo:</p>
+                    <img src="/imgs/banco/der.png" alt="">
+                    <p>Primary Key (Chave primária / ponto preto) é atributo de modelo único que irá refletir sob as quais herdem do mesmo, ou seja, ela vai passar um dado no qual trá referência para aquela enntidade, já as foreign Key(Chave Estrangeira / ponto branco com mesmo nome da aonde foi herdado ) é aquele atributo herdado de outra entidade que vai refletir diretamente na entidade onde está e na requisição e pesquisa de dados.</p>
+                    <p>Entidade Associativa também é presente em muitas relações, porque e</p>
+                </div>
+                </div>
+                    
+                <h3>DQL, DDL e DML</h3>
+                <p>DDL (Data Definition Language): É uma linguagem usada para definir a estrutura e a organização dos dados em um banco de dados. As principais operações do DDL são:</p>
+                    <ul>
+                        <il>CREATE: Usado para criar tabelas, índices, visões e outros objetos do banco de dados.</il>
+                        <il>ALTER: Utilizado para modificar a estrutura de objetos existentes no banco de dados, como adicionar ou remover colunas de uma tabela.</il>
+                        <il>DROP: Usado para excluir objetos do banco de dados, como tabelas ou índices.</il>
+                    </ul>
+                <p>DML (Data Manipulation Language): É uma linguagem usada para manipular os dados em um banco de dados. As principais operações do DML são:</p>
+                    <ul>
+                        <il>INSERT: Usado para inserir novos registros em uma tabela.</il>
+                        <il>UPDATE: Usado para atualizar os valores existentes em uma tabela.</il>
+                        <il>DELETE: Usado para excluir registros de uma tabela.</il>
+                    </ul>
+                <p>DQL (Data Query Language): É uma linguagem usada para consultar dados em um banco de dados. A principal operação do DQL é:</p>
+                    <ul>
+                        <il>SELECT: Usado para recuperar dados de uma ou mais tabelas do banco de dados, especificando as colunas desejadas, condições de filtro e opções de junção. </il>
+                    </ul>
+                <h3>3 formas normais para um Banco de Dados</h3>
+                <div id="1forma">
+                    <h3>1º forma normal</h3>
+                    <p>Não posso ter campos multivalorados, nem compostos (Atributos)</p> 
+                    <figure>
+                        <img src="/imgs/banco/1 forma normal.png" alt="" height="300px" width="600px">
+                        <figcaption>Aqui vemos a utilização de uma aplicação para um atributo multivalorado, uma solução seria adicionar um "id" a cada número que a pessoa tenha</figcaption>
+                    </figure>
+                    
+                </div>
+                <div id="2forma">
+                    <h3>2º forma normal</h3>
+                    <p>Não posso conter dependência parcial( atributos que não são chave dependem unicamente da chave primária da tabela ) e deve pertencer a 1º forma normal.</p> 
+                    <figure>
+                        <img src="/imgs/banco/2 forma normal.png" alt="" height="300px" width="600px">
+                        <figcaption>As remunerações são variáveis de acordo com o número de aulas ministradas no mês. Por este motivo, o valor depende do período e do professor. Nesse caso, podemos dizer que a tabela está na 2ª. forma normal. </figcaption>
+                    </figure>
+                </div>
+                <div id="3forma">
+                    <h3>3º forma normal</h3>
+                    <p>Não contenho dependência transitiva</p> 
+                    <figure>
+                        <img src="/imgs/banco/3 forma normal.png " alt="" height="300px" width="600px">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@media screen and (max-width:760px)  {
+    body{
+        background-color: white;
+        color: black;
+    }
+    header{
+        flex-direction: column;
+    }
+    #title{
+        margin-right: 100px;
+    }
+    a{
+        color: black;
+    }
+    
+  
+    #meio_apresentacao{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    #git{
+        filter: invert(0);
+    }
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}

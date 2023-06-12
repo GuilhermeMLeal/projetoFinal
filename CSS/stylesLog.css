@@ -1,0 +1,116 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Wix Madefor Display', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color:white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#apresentação{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 10px;
+}
+main{
+    font-size: 18px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#primeiroProjeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px
+}
+#imgsLanche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+summary{
+    margin-top: 20px;
+}
+#SEMANTICO{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#videoHTMLCSS{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#tiposVar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    justify-content: space-between; 
+    list-style-position: inside;
+}
+#array{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tiposDados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#operadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#operadores figcaption{
+    text-align: center;
+}
+#condicionais{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+main h3{
+    text-align: center;
+}
+#repetição{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#funcao{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
