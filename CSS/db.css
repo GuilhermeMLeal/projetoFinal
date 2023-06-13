@@ -165,7 +165,14 @@ main{
 img{
     border-radius: 20px;
 }
-
+#imagens{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 #_forma{
     display: flex;
     flex-direction: column;
