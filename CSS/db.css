@@ -2,9 +2,8 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair', serif;
     font-family: 'Wix Madefor Display', sans-serif;
-    
+   
 }
-
 body{
     background-color: rgb(34, 34, 34);
     color:white;
@@ -12,12 +11,95 @@ body{
     margin: 0 auto;
     padding: 15px;
 }
+#exAssocitiva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 10px;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+#title h1{
+    font-weight: 200;
+}
+
+#title h1:hover{
+    color:rgb(78, 78, 239);
+    transition: (0.9s all);
+}
+
+il{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    font-size: 16px;
+}
+
+a:hover{
+    color:rgb(78, 78, 239);
+    transition: (0.9s all);
+}
+
+#projetos{
+    border: 2px solid rgb(78, 78, 239) ;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#projetos:hover{
+    background-color:rgb(78, 78, 239);
+    color: white;
+    transition: (0.9s all);
+}
+
+.loader {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+              linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+              linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+    background-size: 10px 400%;
+    background-repeat: no-repeat;
+    animation: matrix 1s infinite linear;
+  }
+  
+  @keyframes matrix {
+    0% {
+      background-position: 0% 100%, 50% 100%, 100% 100%
+    }
+  
+    100% {
+      background-position: 0% 0%, 50% 0%, 100% 0%
+    }
+  }  
+
 #apresentação{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
+    
 }
 #inicio{
     display: flex;
@@ -34,6 +116,7 @@ main{
     text-align: justify;
     justify-content: center;
     align-items: center;
+    
 }
 #tipos{
     display: flex;
@@ -215,4 +298,19 @@ img{
     justify-content: center;
     align-items: center;
     gap:20px;
+}
+
+#aplicacaoPratica{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#videoAplica{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
