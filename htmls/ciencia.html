@@ -4,9 +4,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ciência de Dados</title>
+    <link rel="stylesheet" href="/CSS/ciencia.css">
 </head>
 <body>
+    <header>
+        <div id="title">
+            <div class="loader">
+            </div>
+            <h1>MARTINS</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="/htmls/home.html"><il>HOME</il></a>
+                <a href="#nada1"><il>SOBRE</il></a>
+                <a href="#nada2"><il>MATÉRIAS</il></a>
+                <a href="#" id="projetos"><il>PROJETOS</il></a>
+               <!-- <il><input type="checkbox" id="troca_cor"><il> -->
+                    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="apresentação">
+            <div id="escritaApre">
+                <h1>Ciência de Dados</h1>
+                <h2>Aprendizado nesse 1º Semestre</h2>
+                <h3>Ciêcia de Dados foi o nosso último tópico, no qual aprendemos cálculos sobre diversas estátisticas, amostragens , funções e muitos outros com a linguagem Python e suas bibliotecas.</h3>
+                
+            </div>
+           
+            <img src="/imgs/ciencia de dados/undraw_visual_data_re_mxxo-PhotoRoom.png-PhotoRoom.png" alt="" width="600px">
+        </div>
+        <details>
+            <summary>Escalas de avaliação de dados (Stanley Stevens)</summary>
+            <div id="tiposEscala">
+                <h3>Tipos de escala:</h3>
+            <ul>    
+                <il>Escala nominal : Usada para rotular variáveis em classificações distintas e não envolve um valor  quantitativo e nem uma ordem. Como exemplo de “sim ” e “não” para uma pergunta.</il><br><br>
+                <il>Escala Ordinal : É basicamente uma pesquisa de satisfação, cujo vai determinar o quão uma é melhor que a outra, ou até quantos clientes ficaram satisfeitos com o ambiente.</il><br><br>
+                <il>Escala Intervalar : Seria a tal da recomendação , por exemplo um intervalo de 0/10, na qual se definiria o quanto você indicaria aquele produto para um conhecido.</il><br><br>
+                <il>Escala de razão : Escolhas determinadas, na qual seria como se fosse eleita uma pesquisa de idade, altura ou até mesmo comparação de preferências.</il><br><br>
+            </ul>
+            </div>
+            
+            
+        </details>
+        <details>
+            <div id="Amostragem">
+
+            </div>
+            <summary>Amostragem</summary>
+            <br>
+            <ul>
+                <li><strong>Aleatória(sample()):</strong> Escolha de elementos  de forma randômica em um grupo definido , sem uma precisão de dados .</li><br>
+                <li><strong>Sistemática (arange()):</strong> É feito uma seleção aleatória do primeiro elemento da amostra e em seguidas os demais são escolhidos através de intervalos fixos ou sistemáticos, ou seja, um exemplo prático seria a escolha de pessoas, nas quais seriam escolhidas as primeiras pessoas sentadas em uma mesa no estabelecimento .</li><br>
+                <li><strong>Estratificada:</strong> Separa os elementos em grupos homogêneos e em seguida é feita uma amostra aleatória em cada grupo (estrato), ou seja, deve-se atribuir um parâmetro/variável para especificar a minha pesquisa (sexo, idade, hobbies, entre muitos outros) .</li><br>
+            </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Tendência Central</summary>
+            <h3>São utilizadas para representar um conjunto de dados em um único valor (comportamento de um conjunto).</h3>
+            <details>
+                <summary>Moda</summary>
+                <div id="moda">
+                <div id="escritaModa">
+                <h3>Moda (mode()).</h3>
+                <h3>Em um conjunto de dados é o dado com frequência absoluta (qual mais se repete)</h3><br>
+                <ul>
+                    <il>Modal: quando um conjunto possui uma única moda.</il><br><br>
+                    <il>Bimodal: quando um conjunto possui duas modas.</il><br><br>
+                    <il>Polimodal: quando um conjunto possui três ou mais modas.</il><br><br>
+                    <il>Amodal: quando todos os dados possuem a mesma frequência.</il><br><br>
+                </ul>
+                </div>
+                
+                <figure>
+                    <img src="/imgs/ciencia de dados/conjunto modal.png" alt="">
+                    <figcaption>Conjunto Modal que tem um único valor em comum(37)</figcaption>
+                </figure>
+            </div>
+            </details>
+            <details>
+                <summary>Mediana</summary>
+                <div id="mediana">
+                <h3>Mediana(median())</h3>
+                <h3>Mediana é o valor que ocupa a posição central dos valores quando os dados estão organizados em ordem(crescente ou decrescente)</h3>
+                <div id="medianaImgs">
+                    <figure id="impar">
+                        <img src="/imgs/ciencia de dados/mediana impar.png" alt="">
+                        <figcaption>Em um conjunto ímpar é possível encontrar a mediana atribuindo o total de (valores + 1 / 2), assim se encontra o ponto central.</figcaption>
+                    </figure>
+                    <figure id="par">
+                        <img src="/imgs/ciencia de dados/mediana par.png" alt="">
+                        <figcaption>Em um conjunto par é possível encontrar pela equação (valorMeio + (valorMeio+1))/2.</figcaption>
+                    </figure>
+                </div>
+                </div>
+            </details>
+            <details>
+                <summary>Média</summary>
+                <div id="media">
+                <h3>Média (mean())</h3>
+                <div id="mediaImgs">
+                    <div id="mediaArit">
+                        <h3>Média Aritmética</h3>
+                        <p>É calculada pela soma de todos os elementos do conjunto dividida pela quantidade de elementos do conjunto.</p>
+                        <img src="/imgs/ciencia de dados/media aritmetica.png" alt="">
+                    </div>
+                    <div id="mediaPonde">
+                        <h3>Média Ponderada</h3>
+                        <p>São atribuídos pesos para cada um dos valores, quanto maior for o peso, maior será a influência .</p>
+                        <img src="/imgs/ciencia de dados/media ponderada.png" alt="">
+                    </div>
+                </div>
+               
+                </div>
+                
+                    
+            </details>
+            <details>
+                <summary>Percentil e Quartil </summary>
+                <div id="percentQuartil">
+                    <div id="percentil">
+                        <h3>Percentil(quantile())</h3>
+                        <p>Medidas que dividem a amostra (por ordem crescente dos dados) em 100 partes, cada uma com uma percentagem de dados aproximadamente igual.</p>
+                        <img src="/imgs/ciencia de dados/percentil.png" alt="" width="400px">
+                    </div>
+                    <div id="quartil">
+                        <h3>Quartil(quantile(0.25/0.5/0.75))</h3>
+                        <p>Possuem a mesma ideia do percentil, porém a diferença são utilizados 3 valores que dividem o conjunto em 4 partes iguais, ou seja, o mesmo que os percentils 25%(Q1), 50%(Q2) e 75%(Q3).</p>
+                        <img src="/imgs/ciencia de dados/quartil.png" alt="" width="400px">
+                    </div>
+                </div>
+            </details>
+        </details>
+        <details>
+            <summary>Medidas de dispersão</summary>
+            <div id="medidasDis">
+                <h3>Parâmetros estatísticos usados para determinar o grau de variabilidade dos dados de um conjunto de valores.</h3>
+                <ul>
+                <il>Amplitude (tipoDado(var.max()-var.min())) : Definida como a diferença entre a maior e a menor observação de um conjunto de dados.</il><br><br>
+                <il>Variância (var()) : Determinada pela média dos quadrados das diferenças entre cada uma das observações e a média aritmética da amostra.</il><br><br>
+                <il>Desvio padrão (std()) : É uma medida que expressa o grau de dispersão de um conjunto de dados. Ou seja, o desvio padrão indica o quanto um conjunto de dados é uniforme (quanto mais próximo de 0, mais homogêneo serão os dados). </il><br><br>
+            </div>
+            
+            </ul>
+        </details>
+        <details>
+            <summary>Inferência</summary>
+            <div id="inferenc">
+                <h3>Inferência</h3>
+                <h3>Distribuição Probabilística Binomial</h3>
+                <p>A curva de probabilidade binomial é caracterizada por dois parâmetros: a probabilidade de ocorrer o evento de interesse e o tamanho da amostra, ou seja, ele fala todas as probabilidades para todos os resultados possíveis para o tamanho definido da amostra.</p>
+                <p>Regressão logistica: colocamos em prática a inferência e separamos em grupos os dados coletados (classificador) em um gráfico de dispersão.</p><br><br>
+            </div>
+        </details>
+        <details>
+            <summary>Qui Quadrado</summary>
+            <div id="qui">
+                <h3>Qui Quadrado</h3>
+            <p> A hipótese estatística do Qui-quadrado é um teste de independência entre variáveis categóricas, ou seja, se são associadas ou são independentes, uma da outra. </p>
+            <ul>
+                <il>Teste Qui-quadrado de independência:Graus de liberdade = (número de linhas - 1) * (número de colunas - 1)</il><br><br>
+                <il>Teste Qui-quadrado de bondade de ajuste: Graus de liberdade = (número de categorias observadas - número de parâmetros estimados na distribuição teórica) - 1</il><br><br>
+            </ul>
+            <h3>Tipos de testes de amostra</h3>
+            <ul>
+                <il>Kolmogorov-Smirnov (kstest()) : Verifica se uma amostra segue uma distribuição específica, comparando a função de distribuição acumulada</il><br><br>
+                <il>Shapiro-Wilk (shapiro()) : É usado para determinar se uma amostra vem ou não de uma distribuição normal .</il><br><br>
+                <il>Anderson Darling (anderson()) : É um teste de qualidade de ajuste que mede o quão bem seus dados se ajustam a uma distribuição especificada.</il><br><br>
+            </ul>
+            </div>
+            
+        </details>
+    <div id="importantes">
+        <div id="funcoes">
+            <div id="funcoesPoli">
+            <h3>Função</h3>
+            <p>Considerando as variáveis x e y, sendo que para cada valor de x, existe em correspondência um único valor de y, então dizemos que y é uma função de x (f(x)).</p>
+            <h3>Funções Polinomiais</h3>
+                <ul>
+                    <il>Monômio (um monômio): f(x)= 2x</il>
+                    <br><br>
+                    <il>Binômio (dois monômios): f(x)= 2x + 3</il><br><br>
+                    <il>Trinômio (três monômios): f(x)= 2x^2 + 5</il><br><br>
+                    <il>Polinômio (4 ou mais monômios): f(x) = x^3 + 2x^2 + x + 3</il><br><br>
+                </ul>
+            </div>
+            
+            <figure>
+                <img src="/imgs/ciencia de dados/funcoes.png" alt="">
+                <figcaption>Tipos de funções e seus polinômios.</figcaption>
+            </figure>
+        </div>
+       
+        <div>
+                  
+        <div id="funcao1">
+                <h3>Função de 1º grau (equação da reta)</h3>
+                <figure>
+                    <img src="/imgs/ciencia de dados/funcao 1 grau.png" alt="">
+                <figcaption>Onde a é o coeficiente angular e b é o coeficiente linear.</figcaption>
+            </div>
+            <div id="funcao2">
+                <h3>Função de 2º grau (função quadrática)</h3>
+                <figure>
+                    <img src="/imgs/ciencia de dados/funcao 2 grau.png" alt="">
+                <figcaption>Esta função gera uma parábola, sendo que sua concavidade estará voltada para cima quando a>0 e estará voltada para baixo quando a for menor que 0.  </figcaption>
+                </figure>
+            </div>
+       
+            <div id="exponencial">
+                <div id="funcao">
+                    <h3>Função exponencial</h3>
+                    <p>Variável que está no expoente e cuja base é sempre maior que zero e diferente de um. Sendo assim:</p>
+                    <ul id="lista">
+                        <il>f(x) = x^2→ não é equação exponencial</il><br><br>
+                        <il>f(x) = 2^x →  é equação exponencial</il><br><br>
+                        <il>f(x) = 2^e→  não é equação exponencial</il><br><br>
+                        <il>f(x) = e^pi →  não é equação exponencial</il><br><br>
+                        <il>f(x) = pi^x → é equação exponencial</il><br><br>
+                    </ul>
+                </div>
+                
+            <img src="/imgs/ciencia de dados/exponencial.png" alt="">
+            </div>
+          <div id="juncaoLogLim">
+            <div id="logaritmo">
+                <h3>Logaritmo </h3>
+                <p>Dois números reais positivos a e b, com a ≠ 0. O logaritmo de b na base a é o número x se, e somente se, a elevado a x for igual ao número b.</p>
+                <img src="/imgs/ciencia de dados/logaritmo.png" alt="">
+            </div>
+            <div id="limite">
+                <h3>Limites</h3>
+                <p>Consiste em analisar e descrever o comportamento de funções, ou seja, o limite nos permite determinar o valor para o qual a função tende à medida que x se aproxima de f(a), posso colocar que em 3 o limite é 5 e mesmo que aproxime de um número maior que 5 e retroceder o processo, ainda o limite será cinco porque o eixo X chegou ao seu "limite".</p>
+                <img src="/imgs/ciencia de dados/limite.png" alt="">
+                
+            </div>
+          </div>
+            
+            <div id="derivada">
+                <div id="textDeriv">
+                    <h3>Derivada</h3>
+                    <p>A derivada é a taxa de variação de uma função y=f(x) em relação à x. A derivada é dada pela relação Δx/Δy.</p><br>
+                    <p>Considerando uma função y=f(x), a sua derivada no ponto x=x0 corresponde à tangente do ângulo formado pela intersecção entre a reta e a curva da função y=f(x) , isto é, o coeficiente angular da reta tangente à curva.</p>
+                </div>
+                <div id="imgDeriv">
+                    <figure>
+                        <img src="/imgs/ciencia de dados/derivada1.png" alt="" width="500px">
+                        <figure>Exemplo com derivada como limite e sua função.</figure>
+                    </figure>
+                    
+                    
+                </div>
+            </div>
+            <div id="integral">
+                <div id="intTexto">
+                    <h3>Integral </h3>
+                    <p>Criada para calcular a área sob uma curva no plano cartesiano Conhecido por ser o contrário da derivada.</p>
+                
+                    <ul>
+                        <il>Integral definida (intervalo de pontos a e b)</il><br><br>
+                        <il>Integral indefinida (não tem intervalo)</il><br><br>
+                    </ul>
+                </div>
+                
+                    <img src="/imgs/ciencia de dados/integral.jpg" alt="">
+                </div>
+                
+            </div>
+    </div>
+        
+        
+        <p></p>
+    </main>
     
 </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/CSS/stylesLog.css">
+    <title>Tecnologia da Informação e Conectividade</title>
+    <link rel="stylesheet" href="/CSS/redes.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair&family=Wix+Madefor+Display&display=swap');
     </style>
@@ -19,31 +19,34 @@
         </div>
         <nav>
             <ul>
-                <a href="#title"><il>INÍCIO</il></a>
+                <a href="/htmls/home.html"><il>INÍCIO</il></a>
                 <a href="#nada1"><il>SOBRE</il></a>
                 <a href="#nada2"><il>MATÉRIAS</il></a>
                 <a href="#" id="projetos"><il>PROJETOS</il></a>
-                <il><input type="checkbox" id="troca_cor"><il>
+                
                     
             </ul>
         </nav>
     </header>
     <main>
         <div id="apresentação">
-            <h1>Redes de Computadores</h1>
-            <h2>Aprendizado nesse 1º Semestre</h2>
-            <h3>Em redes pude aprender e compreender vários assuntos que envolvem a utilização e requisição da internet. Estruturas de redes, ISP's, protocolos de redes , IPV4 e IPV6 , dentre muitos assuntos.</h3>
-            <img src="/imgs/redes/undraw_connected_world_wuay (1).png" alt="" width="350px" id="globo">
+            <div id="textoApre">
+                <h1>Tecnologia da Informação e Conectividade</h1>
+                <h2>Aprendizado nesse 1º Semestre</h2>
+                <h3>Em redes pude aprender e compreender vários assuntos que envolvem a utilização e requisição da internet. Estruturas de redes, ISP's, protocolos de redes , IPV4 e IPV6 , dentre muitos assuntos.</h3>
+            </div>
+            
+            <img src="/imgs/redes/undraw_connected_world_wuay (1)-PhotoRoom.png-PhotoRoom.png" alt="" width="350px" id="globo">
         </div>
-        <div>
+        <div id="tiposRedes">
             <h3>Tipos de redes:</h3>
             <ul>
-                <il>PAN - Personal Area Network(Rede de Área Pessoal) = essa rede tem a  função ligar aparelhos de uso pessoal,através de uma conexão sem fio. </il><br><br>
-                <il>CAN - Controller Area Network (Rede de Área de Controladores) = tipo de rede de comunicação usado principalmente em sistemas automotivos.</il><br><br>
-                <il>LAN - Local Area Network (Rede de Área Local) =  rede de computadores que abrange uma área geograficamente limitada, como uma casa, escritório ou edifício. 
+                <il>PAN - Personal Area Network(Rede de Área Pessoal) = Essa rede tem a  função ligar aparelhos de uso pessoal,através de uma conexão sem fio. </il><br><br>
+                <il>CAN - Controller Area Network (Rede de Área de Controladores) = Tipo de rede de comunicação usado principalmente em sistemas automotivos.</il><br><br>
+                <il>LAN - Local Area Network (Rede de Área Local) =  Rede de computadores que abrange uma área geograficamente limitada, como uma casa, escritório ou edifício. 
                 </il><br><br>
-                <il>MAN - Metropolitan Area Network (Rede de Área Metropolitana) = conecta várias LANs dentro de uma cidade ou região metropolitana </il><br><br>
-                <il>WAN - Wide Area Network (Rede de Área Ampla) = estende por uma grande área geográfica, como um país, continente ou até mesmo globalmente(engloba LANs e MANs ).</il><br><br>
+                <il>MAN - Metropolitan Area Network (Rede de Área Metropolitana) = Conecta várias LANs dentro de uma cidade ou região metropolitana </il><br><br>
+                <il>WAN - Wide Area Network (Rede de Área Ampla) = Estende por uma grande área geográfica, como um país, continente ou até mesmo globalmente(engloba LANs e MANs ).</il><br><br>
             </ul>
             <img src="/imgs/redes/tipos redes.jpg" alt="">
         </div>
@@ -51,21 +54,19 @@
             <h3>Topologias de redes:</h3>
             <p>Topologia é um termo utilizado para designar a configuração assumida pelos computadores de uma Rede, ou seja, a forma como estes estão interligados.</p>
             <ul>
-                <il>Topologia Física = Refere-se à forma como os computadores e cabos de rede se interligam fisicamente na Rede.</il><br><br>
-                <il>Topologia Lógica = Refere-se ao modo como os dados circulam entre os computadores da rede.</il><br><br>
+                <il>Topologia Física = Refere-se à forma como os computadores e cabos de rede se interligam fisicamente(Estrela,Barramento e Anel) na Rede.</il>
+                <il>Topologia Lógica = É a troca de dados entre dispositivos, independentemente da sua conexão física.</il>
             </ul>
-            <h3>Principais tipos de Topologias: </h3>
             <figure id="figureTopologias">
+            <figure id="topoImgs">
                 <img src="/imgs/redes/topologias.jpg" alt="" >
-            </figure>
-                
  
                 <ul>
-                    <li>Topologia de Barramento = Todos os dispositivos são conectados a um único cabo em linha reta, chamado de barramento</li> <br><br>
-                    <li>Topologia em Anel = Os dispositivos são conectados em um formato de anel, onde cada dispositivo está conectado a outros dois dispositivos.</li><br><br>
-                    <li>Topologia em Estrela = Todos os dispositivos são conectados a um dispositivo central(switch).</li><br><br>
+                    <li>Topologia de Barramento = Todos os dispositivos são conectados a um único cabo em linha reta, chamado de barramento.</li> <br><br>
+                    <li>Topologia em Anel = Os dispositivos são conectados em um formato de anel, onde cada dispositivo está conectado a outros dois dispositivos e ele pode percorrer por um único sentido.</li><br><br>
+                    <li>Topologia em Estrela = Todos os dispositivos são conectados a um dispositivo central(switch) e a partir dele vai enviar a informação para o dispositivo requisitado e devolver para quer fez a requisição .</li><br><br>
                     <il>Topologia em Estrela Estendida: É uma variação da topologia em estrela usada para conectar várias redes locais (LANs) em uma rede maior.</il><br><br>
-                    <li>Topologia em Malha = Cada dispositivo está conectado a todos os outros dispositivos da rede, não tem um dispositivo intermediário. </li><br><br>
+                    <li>Topologia em Malha = Cada dispositivo está conectado a todos os outros dispositivos da rede, ou seja, você não precisa de um "intermediário". </li><br><br>
                   </ul>
         </div>
         <div>
@@ -73,19 +74,74 @@
             <ul>
                 <il>Governança</il>
                 <il>Roteador(distribuidor):  Ele analisa os dados enviados pela rede, escolhe a melhor rota para eles viajarem e os envia por esse caminho.</il>
-                <il>HUB</il>
+                <il>HUB(concentrador) = Conecta vários dispositivos ethernet em um único segmento</il>
                 <il>Switch(controlador) = Ele permite que os dispositivos de rede se comuniquem entre si e com outras redes, criando uma rede de recursos compartilhados. </il>
-                <il>Placas de rede =</il>
-                <il></il>
+                <il>Placas de rede = Hardware que permite a troca de informações entre PC's, ou seja, controla todo envio e recebimento de dados entre equipamentos.</il>
+                <il>Fibra Óptica = Meio de transmissão, no qual utiliza fonte de luz(fotoelétrica) e sua propagação como meio de transmissão e quando chega esse sinal chega em outro dispositivo, o sinal é convertido novamente em sinais elétricos por meio de dispositivos chamados de transceptores ópticos. </il>
+                <il>Moden : C</il>
+                <il>Repetidor = Amplifica o sinal de um emissor antes de enviá-lo para o destinatário.</il>
             </ul>
         </div>
         <div id="modeloOSI">
             <h3>Modelo OSI e Tanenbaum</h3>
-            
-            <img src="/imgs/redes/modelo osi.jpg" alt="">
-            <img src="/imgs/redes/osi.png" alt="">
+            <div id="imgsmodeloOsi">
+                <img src="/imgs/redes/modelo osi.jpg" alt="" width="500px" height="400px">
+                <img src="/imgs/redes/osi.png" alt=""width="500px">
+            </div>
+           
             <p>O Modelo OSI em si </p>
+        <div id="camada1">
+            <p>Camada 1 - Física: Camada física é o caminho que os pacotes percorrem para chegar ao destino(transmissão fibra óptica, wireless e cabos de rede convencionais(cobre)), ou seja, os dados são transmitidos e processados , adiante são passados para a próxima camada .
+            <div>
+    
+            </div>
         </div>
-        <div></div>
+        <div id="camada2">
+           <p> Camada 2 - Enlace ou Ligação (Fiscal): Ele observa se o pacote(meio físico) tem algum defeito em sua formatação e controla o fluxo com que os pacotes transmitidos para camadas superiores, após essa análise os dados recebidos assumem uma transmissão praticamente sem erros. Essa camada é conhecida pela função dos switches e é dividida em 2 subcamadas:</p>
+            <ul>
+                <il>MAC(Media Acces Control / Controle de acesso a midia):  Camada que possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço físico, conhecido como endereço MAC e por meio desse endereço que se identifica e envia os pacotes. </il>
+                <il>LLC(Logical Link Control / Controle de link lógico) : Camada que temos o controle de fluxo dos dados na rede para a próxima camada.</il>
+                <il>FCS (Frame Check Sequence / Sequência de Verificação de Quadro)</il>
+            </ul>
+
+        </div> 
+        <div id="camada3">
+            <p>Camada 3 - Rede : Verifica o emissor e receptor da mensagem. Se existirem muitas requisições para serem enviadas, eles podem priorizar quais serão enviadas primeiro e qual é o melhor caminho para enviar esses dados. Basicamente, ela controla o roteamento entre a origem e destino do pacote e após definição vai para o transporte.</p>
+            <p>IPV4 e IPV6</p>
+            <ul>
+                <il>IPV4</il>
+                <il>IPV6</il>
+            </ul>
+            <p>Diferença entre IP e MAC:</p>
+            <ul>
+                <il>MAC é o endereço físico de quem envia o pacote, ou seja, no envio nós passamos por vários dispositivos(roteador, switch, servidor e entre outros) e cada um tem seu MAC, ou seja, o endereço vai se mudar constantemente e até se perdendo no caminho de retorno. </il>
+                <il>IP é um indereço no qual não sofre alteração</il>
+            </ul>
+            <p>Máscara de Rede : </p>
+
+        </div>  
+        <div id="camada4">
+            <p>Camada 4 - Transporte: Camada que garante o envio e o recebimento dos pacotes vindos da camada 3. Ela gerencia o transporte dos pacotes para garantir o sucesso no envio e no recebimento de dados, com preocupação para que os dados sejam entregues com consistência, sem erros e duplicações.</p>
+            <p>Protocolos TCP e UDP:</p>
+            <ul>
+                <il>TCP :</il>
+                <il>UDP :</il>
+            </ul>
+
+
+Bem, mas para ocorrer o transporte de um pacote entre os computadores, é necessário que as máquinas consigam se comunicar. Isso é função da próxima camada.
+        </div>  
+        <div id="camada5">
+            <p>Camada 5 - Sessão : Camada é responsável por estabelecer e encerrar a conexão entre hosts(inicia e sincroniza).Além de registrar o log e realizar algumas tarefas de segurança.</p>
+
+        </div>  
+        <div id="camada6">
+
+        </div>  
+        <div id="camada7">
+
+        </div>  
+        </div>
+        
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="/CSS/db.css">
-    <title>Document</title>
+    <title>BANCO DE DADOS</title>
 </head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair&family=Wix+Madefor+Display&display=swap');
@@ -24,24 +24,24 @@
                 <a href="#nada1"><il>SOBRE</il></a>
                 <a href="#nada2"><il>MATÉRIAS</il></a>
                 <a href="#" id="projetos"><il>PROJETOS</il></a>
-                <il><input type="checkbox" id="troca_cor"><il>
+                
                     
             </ul>
         </nav>
     </header>
-    <main>
+    <main >
         <div id="inicio">
             <h1>Banco de Dados</h1>
             <h2>Afinal, o que são?</h2>
-            <p>Banco de Dados ou Data Base são estruturas físicas, nas quais dados e informações são mantidas por um período incerto de tempo e são utilizadas para algum propósito, principalmente feito para lidar com grandes volumes de informações e oferecer recursos para garantir a integridade, segurança e disponibilidade dos dados de um algumas instituição.</p>
+            <p>Banco de Dados ou Data Base são estruturas físicas, nas quais dados e informações são mantidas e utilizadas para algum propósito(cadastro, para análise de dados e muitos outros fatores). Principalmente, feito para lidar com grandes volumes de informações e oferecer recursos para garantir a integridade, segurança e disponibilidade de dados.</p>
         </div>
         <div id="tipos">
             <h2>Tipos e conceitos sobre DB's</h2>
-            <p>Basicamente, em Banco de Dados nós possuímos uma gama imensa de tipos e diferentes formas de trabalhar. Essa gama normalmente é trabalhada e com as devidas plataformas, conhecidas como SGBD's (Sistema de Gerenciamento de Banco de Dados), estando no mercado de forma paga ou gratuita. Essa gama de tipos de Bancos são representadas por Banco Orientado a Objeto, Autônomo, Documentos, em Cache, em Cloud, porém irei apresentar 2 que foram enfatizados no semestre, sendo eles:</p>
+            <p>Basicamente, em Banco de Dados nós possuímos uma gama imensa de tipos e diferentes formas de trabalhar. Essa gama normalmente é trabalhada e com as devidas plataformas, conhecidas como SGBD's (Sistema de Gerenciamento de Banco de Dados), estando no mercado de forma paga ou gratuita. Essa grande escada de tipos de Bancos são representadas por Banco de Dados Orientado a Objeto, Autônomo, Documentos, em Cache, em Cloud, porém irei apresentar 2 que foram enfatizados no semestre, sendo eles:</p>
             <div id="SQL">
                 <div id="escritaSQL">
                     <h3>Bancos de dados relacional(SQL)</h3>
-                    <p>Como seu próprio nome nos diz, é um banco de consulta estruturada. Essa consulta nos remete uma ideia de organização e estruturação de dados, pois com ele podemos perceber em que lugar esses dados estão alocados (tables/tabelas) e com a devida consulta, ver em que parâmetro está essa informação (column/coluna) e linha. Os seus mais conhecidos SGBD's são:  </p>
+                    <p>Como seu próprio nome nos diz, é um banco de consulta estruturada. Essa consulta nos remete uma ideia de organização e estruturação de dados, pois com ele podemos perceber em que lugar esses dados estão alocados (tables/tabelas) e com a devida consulta, podemos requisitá-los(SELECT) para aplicações necessárias. Os seus mais conhecidos SGBD's são:  </p>
                 </div>
                 <div id="sqltipos">
                     <img src="/imgs/banco/Screenshot 2023-06-09 013253.png " alt="">
@@ -54,7 +54,7 @@
                 </div>
                 <div id="EscritaNOSQL">
                     <h3>Bancos de dados não relacional(NoSQL)</h3>
-                    <p>Nele se existe uma distinção, pois permite que dados não estruturados e semiestruturados sejam armazenados e manipulados (diferemte de um banco de dados relacional, que define como todos os dados inseridos no banco de dados devem ser compostos). Eles ganharam força pela gama de proporção de dados, pois podem se adaptar e obter uma certa flexibilidade. Principais tipos são: </p>
+                    <p>Nele se existe uma distinção, pois permite que dados não estruturados e semiestruturados sejam armazenados e manipulados (diferente de um banco de dados relacional, que define como todos os dados inseridos no banco de dados devem ser compostos). Eles ganharam força pela gama de proporção de dados, pois podem se adaptar e obter uma certa flexibilidade diferentes de outros. Principais tipos são: </p>
                 </div>
                 
             </div>
@@ -77,7 +77,7 @@
                     <div id="tiposBancos">
                         <figure>
                             <img src="/imgs/banco/DML.png" alt="">
-                            <figcaption>DER – Diagrama de Entidade e Relacionamento</figcaption>
+                            <figcaption>DER - Diagrama de Entidade e Relacionamento</figcaption>
                         </figure>
                         <figure>
                             <img src="/imgs/banco/UML.png" alt="">
@@ -111,14 +111,14 @@
               
                 <div id="entidade">
                     <h3>Entidade</h3>
-                    <p>Entidades: Os objetos ou partes envolvidas um domínio, também chamados de entidades, podem ser classificados como físicos ou lógicos, de acordo sua existência no mundo real.</p>
+                    <p>Entidades: Entidades são objetos no mundo real que no Banco de Dados são significantes para nossa aplicação(atributos, PK e FK), podem ser classificados como físicos ou lógicos, de acordo sua existência no mundo real.</p>
                     <img src="/imgs/banco/entidade.png" alt="">
                 </div>
                 <div id="relacionamento">
                     <h3>Relacionamento</h3>
-                    <p>Relacionamento é basicamente a interação de entidades, são nomeados com verbos ou expressões que representam a ação de uma para outra, como também seu relacionamento.Esse relacionamento pode ser representado de duas formas: Forte e Fraco.</p>
+                    <p>Relacionamento é basicamente a interação de entidades, são nomeados com verbos ou expressões que representam a o "relacionamento" entre elas .Esse relacionamento pode ser representado de duas formas: Forte e Fraco.</p>
                     <ul>
-                        <il>Relacionamento forte = Se a entidade a qual possui um relacionamento for uma entidade com valor igual(forte - forte / fraco - fraco) usa-se um RELACIONAMENTO FORTE. </il><br><br>
+                        <il>Relacionamento forte = Se a entidade a qual possui um relacionamento for uma entidade com valor igual(forte - forte / fraco - fraco). </il><br><br>
                         <il>Relacionamento fraco = Caso se a entidade for distinta (forte - fraca).</il><br><br>
                     </ul>
                     <p>Além, da Cardinalidade que é a relação de entidade para entidade, juntamente com o relacionamento.</p>
@@ -126,16 +126,21 @@
                 </div>
                 <div id="atributo">
                     <h3>Atributo</h3>
-                    <p>É uma característica ou propriedade que descreve uma entidade ou objeto. Em termos mais simples, um atributo é uma coluna em uma tabela de banco de dados. Cada registro (linha) em uma tabela terá valores correspondentes para cada atributo.</p>
+                    <p>É uma característica ou propriedade que descreve uma  objeto (entidade). Atributo é uma coluna em uma tabela de banco de dados e cada registro (linha) em uma tabela terá valores correspondentes para cada atributo (coluna).</p>
                     <img src="/imgs/banco/atributo.png" alt="">
                 <div id="der">
                     <h3>DER</h3>
                     <p>O Diagrama Entidade Relacionamento é a representação gráfica do MER, ou seja, representa tudo o que já foi visto, mas em um esquema só. Veja como seria um exemplo:</p>
                     <img src="/imgs/banco/der.png" alt="">
-                    <p>Primary Key (Chave primária / ponto preto) é atributo de modelo único que irá refletir sob as quais herdem do mesmo, ou seja, ela vai passar um dado no qual trá referência para aquela enntidade, já as foreign Key(Chave Estrangeira / ponto branco com mesmo nome da aonde foi herdado ) é aquele atributo herdado de outra entidade que vai refletir diretamente na entidade onde está e na requisição e pesquisa de dados.</p>
+                    <p>Primary Key (Chave primária / ponto preto) é atributo de modelo único que irá refletir sob as quais herdem do mesmo, ou seja, ela vai passar um dado no qual trás referência para aquela entidade.</p> 
+                    <p>Foreign Key(Chave Estrangeira / ponto branco com mesmo nome da aonde foi herdado ) é aquele atributo herdado de outra entidade que vai refletir diretamente na entidade onde está e na requisição e pesquisa de dados.</p>
                     <p>Entidade Associativa(agregação) também é presente em muitas relações, porque é usada em conexões que descrevem um relacionamento entre duas entidades diferentes.</p>
-                    <p>Essa associação no exemplo a seguir é utilizada para ligar duas entidades(n,n) por meio da consulta, na qual tem a chave primária medicamento que é comum entre ambas entidades. Por isso ser associada, pois o medicamento não é referente por "médico" ou "paciente", mas sim promovido através da ação de a entidade médico consultar um paciente e como resultado terá o medicamento. </p>
-                    <img src="/imgs/banco/entidade associativa.png" alt="">
+                    
+                    <figure id="exAssocitiva">
+                        <img src="/imgs/banco/entidade associativa.png" alt="">
+                        <figcaption>Essa associação é utilizada para ligar duas entidades(n,n) por meio da consulta, na qual tem a chave primária medicamento que é comum entre ambas entidades. Por isso ser associada, pois o medicamento não é referente por "médico" ou "paciente", mas sim promovido através da ação de a entidade médico consultar um paciente e como resultado terá o medicamento.</figcaption>
+                    </figure>
+                    
                 </div>
                 </div>
                 <div id="Ds">
@@ -177,7 +182,7 @@
                 <div id="__forma">
                     <h3>2º forma normal</h3>
                     <p>Não posso conter dependência parcial( atributos que não são chave dependem unicamente da chave primária da tabela ) e deve pertencer a 1º forma normal.</p> 
-                    <p>Basicamente, define se os atributos da tabela dependem inteiramente da chave primária. Os atributos que não dependem ou dependem parcialmente da chave são associados a uma outra tabela, agora com uma relação clara com a chave primária da tabela original, no entanto a chave primária é convertida em chave estrangeira (ou externa) na nova tabela.</p>
+                    <p>Nessa forma os atributos da tabela dependem inteiramente da chave primária. Os atributos que não dependem ou dependem parcialmente da chave são associados a uma outra tabela, agora com uma relação clara com a chave primária da tabela original, entretanto a chave primária é convertida em chave estrangeira (ou externa) em uma nova tabela.</p>
                     <figure id="imgforma2">
                         <img src="/imgs/banco/2 forma normal.png" alt="" height="300px" width="700px">
                         <figcaption>Nessa situação podemos ver a criação de novas tabelas por conta dessa não dependência/ parcial , que é retratada no presente exemplo. Quando percebemos que o empregado não está ligado diretamente ao projeto, mas sim as suas horas no próprio, portanto foi criado mais 2 tabelas para que cada um tenha uma representatividade (PK e FK) e nenhum dependa de modo parcial.</figcaption>
@@ -185,7 +190,7 @@
                 </div>
                 <div id="___forma">
                     <h3>3º forma normal</h3>
-                    <p>Não contenho dependência transitiva</p> 
+                    <p>Não contenho dependência transitiva e deve pertencer a 2º forma normal.</p> 
                     <p>Na 3º forma normal o problema em questão seria organização dos atributos que dependem uns dos outros, porém que não são atributos chaves (primárias ou estrangeiras), caso seja necessário, é criada uma tabela secundária para reestruturar a relação de dependência entre os atributos.</p>
                     <figure id="imgforma3">
                         <img src="/imgs/banco/3 forma normal.png " alt="" height="300px" width="600px">
@@ -194,15 +199,17 @@
                 </div>
                 <div id="aplicacaoPratica">
                     <h2>Aqui serão projetos práticos desenvolvidos no 1° semestre de DB(Data Base)</h2>
-                    
-                    <video width="700" height="700" controls>
+                  <div id="videoAplica">
+                    <video width="500" height="700" controls>
                         <source src="/imgs/banco/EXEMPLO BANCO.mp4" type="video/mp4">
                         
                     </video>
-                    <video width="700" height="700" controls>
+                    <video width="500" height="700" controls>
                         <source src="/imgs/banco/Meu Vídeo.mp4" type="video/mp4">
                         
                     </video>
+                  </div>  
+                   
                 </div>
                 
             </div>
