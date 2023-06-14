@@ -33,4 +33,10 @@ header{
     align-items: center;
     justify-content: center;
 }
+#figureTopologias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 

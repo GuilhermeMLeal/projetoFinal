@@ -34,6 +34,7 @@ main{
     text-align: justify;
     justify-content: center;
     align-items: center;
+    width: 1200px;
 }
 #tipos{
     display: flex;

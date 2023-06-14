@@ -1,4 +1,4 @@
-
+/*
 var num = 1;  
 // Artimética(+(soma), -(subtração), *(multiplicação), elevado(**), /(divisão), %(operador de módulo ou operador de resto))
 if(num >1){ //Se um num for maior que 1
@@ -91,3 +91,13 @@ if(num >1){ //Se um num for maior que 1
       
       let resultado = soma(3, 4); // A função "soma" recebe os argumentos 3 e 4
       console.log(resultado); // Saída: 7
+*/
+document.addEventListener("DOMContentLoaded", function() {
+  var typed = new Typed("#logoT", {
+    strings: ["Primeiro semestre ADS-SENAI", "Seja bem-vindo ao site de Guilherme Martins"],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: false
+  });
+});
+
