@@ -38,7 +38,21 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
+#classes{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+#parTrancado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 #title{
     display: flex;
     justify-content: center;

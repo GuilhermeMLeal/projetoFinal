@@ -72,15 +72,18 @@
         <div>
             <h3>Conceitos básicos , antes de entrar nos conteúdos:</h3>
             <ul>
-                <il>Governança</il>
+                
                 <il>Roteador(distribuidor):  Ele analisa os dados enviados pela rede, escolhe a melhor rota para eles viajarem e os envia por esse caminho.</il>
                 <il>HUB(concentrador) = Conecta vários dispositivos ethernet em um único segmento</il>
                 <il>Switch(controlador) = Ele permite que os dispositivos de rede se comuniquem entre si e com outras redes, criando uma rede de recursos compartilhados. </il>
                 <il>Placas de rede = Hardware que permite a troca de informações entre PC's, ou seja, controla todo envio e recebimento de dados entre equipamentos.</il>
                 <il>Fibra Óptica = Meio de transmissão, no qual utiliza fonte de luz(fotoelétrica) e sua propagação como meio de transmissão e quando chega esse sinal chega em outro dispositivo, o sinal é convertido novamente em sinais elétricos por meio de dispositivos chamados de transceptores ópticos. </il>
-                <il>Moden : C</il>
+                <il>Modem : Faz a conexão física de rede (ADSL, cabo metálico, fibra óptica, etc.) e distribui a internet para um dispositivo externo</il><br><br>
                 <il>Repetidor = Amplifica o sinal de um emissor antes de enviá-lo para o destinatário.</il>
             </ul>
+        </div>
+        <div>
+            
         </div>
         <div id="modeloOSI">
             <h3>Modelo OSI e Tanenbaum</h3>
@@ -90,58 +93,106 @@
             </div>
            
             <p>O Modelo OSI em si </p>
-        <div id="camada1">
-            <p>Camada 1 - Física: Camada física é o caminho que os pacotes percorrem para chegar ao destino(transmissão fibra óptica, wireless e cabos de rede convencionais(cobre)), ou seja, os dados são transmitidos e processados , adiante são passados para a próxima camada .
-            <div>
+            <details>
+                <summary>Camada 1</summary>
+                <div id="camada1">
+                    <p>Camada 1 - Física: Camada física é o caminho que os pacotes percorrem para chegar ao destino(transmissão fibra óptica, wireless e cabos de rede convencionais(cobre)), ou seja, os dados são transmitidos e processados , adiante são passados para a próxima camada .</p>
+                    <div id="parTrancado">
+                        <img src="/imgs/redes/par trancado.png" alt="" width="400px">
+                        <img src="/imgs/redes/par1 trancado.png" alt="" width="400px" >
+                    </div>
+                <div>
+            </details>
+            <details>
+                <summary>Camada 2</summary>
+                <div id="camada2">
+                    <p> Camada 2 - Enlace ou Ligação (Fiscal): Ele observa se o pacote(meio físico) tem algum defeito em sua formatação e controla o fluxo com que os pacotes transmitidos para camadas superiores, após essa análise os dados recebidos assumem uma transmissão praticamente sem erros. Essa camada é conhecida pela função dos switches e é dividida em 2 subcamadas:</p>
+                     <ul>
+                         <il>MAC(Media Acces Control / Controle de acesso a midia):  Camada que possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço físico, conhecido como endereço MAC e por meio desse endereço que se identifica e envia os pacotes. </il>
+                         <il>LLC(Logical Link Control / Controle de link lógico) : Camada que temos o controle de fluxo dos dados na rede para a próxima camada.</il>
+                         <il>FCS (Frame Check Sequence / Sequência de Verificação de Quadro)</il>
+                     </ul>
+         
+                 </div> 
+            </details>
     
+            <details>
+                <summary>Camada 3</summary>
+                <div id="camada3">
+                    <p>Camada 3 - Rede : Verifica o emissor e receptor da mensagem. Se existirem muitas requisições para serem enviadas, eles podem priorizar quais serão enviadas primeiro e qual é o melhor caminho para enviar esses dados. Basicamente, ela controla o roteamento entre a origem e destino do pacote e após definição vai para o transporte.</p>
+                    <p>IPV4 e IPV6</p>
+                    <ul>
+                        <il>IPV4(Internet Protocol version 4): É mais usado atualmente, possui IP de 32 bits(quatro grupos de números decimais / 8 bits para cada grupo separados por pontos), além de poder fazer encapsulamento de dados e depois sobe o arquivo inteiro.</il>
+                        <il>IPV6(Internet Protocol version 6) : Foi criado para superar o IPV4, possui 128 bits(oito grupos de números hexadecimais / 16 bits para cada grupo separado por 2 pontos), não permite o encapsulamento.</il>
+        
+                    </ul>
+                    <img src="/imgs/redes/ipv4 e ipv6.png" alt="" width="400px">
+                    <img src="/imgs/redes/tipos IPV4.png" alt=""width="500px">
+                    <div id="classes">
+                        <img src="/imgs/redes/classes de enderecos IPV4.png" alt="" width="500px">
+                        <ul>
+                            <p>IPV4 e suas Classes:</p>
+                            <il>Classe A (0.0.0/8 a 127.0.0.0/8).<il>
+                            <il>Classe B (128.0.0.0 /16 — 191.255.0.0 /16)</il>
+                            <il>Classe C (192.0.0.0 /24 — 223.255.255.0 /24)</il>
+                            <il> Classe D (224.0.0.0 a 239.0.0.0) - Reservado pra Multicasting</il>
+                            <il>Classe E (240.0.0.0 — 255.0.0.0) - Reservado para usos futuros.</il>
+                        </ul>
+                        
+                    </div>
+                    
+                    <p>Diferença entre IP e MAC:</p>
+                    <ul>
+                        <il>MAC é o endereço físico de quem envia o pacote, ou seja, no envio nós passamos por vários dispositivos(roteador, switch, servidor e entre outros) e cada um tem seu MAC, ou seja, o endereço vai se mudar constantemente e até se perdendo no caminho de retorno. </il>
+                        <il>IP é um indereço no qual não sofre alteração depois de definido.</il>
+                    </ul>
+                    <p>Máscara de Rede : Determina a porção de um endereço IP que representa a rede e a porção que representa os dispositivos (hosts) na rede.</p>
+                    <img src="/imgs/redes/MASCARA DE REDE.png" alt="" width="400px">
+                    <p>DHCP : É o IP dinâmico, no qual o roteador promove automaticamente.</p>
+                    <p>Observação : O roteador define o IP global através do DHCP.</p>
+                    <img src="/imgs/redes/DHCP.png" alt="" width="400px">
+                    <p>DNS : Domain Name Server </p>
+                    <p>Exemplo aplicação de todos os conceitos na camada 3:</p>
+                    <img src="/imgs/redes/mac e ipv4.png" alt="">
+                </div>  
+            </details>
+            
+            <details>
+                <summary>Camada 4 </summary>
+                <div id="camada4">
+                    <p>Camada 4 - Transporte: Camada que garante o envio e o recebimento dos pacotes vindos da camada 3. Ela gerencia o transporte dos pacotes para garantir o sucesso no envio e no recebimento de dados, com preocupação para que os dados sejam entregues com consistência, sem erros e duplicações.</p>
+                    <p>Protocolos TCP e UDP:</p>
+                    <ul>
+                        <il>TCP : É aquele no qual espera a confirmação até o dado chegar completo ao destinatário.</il>
+                        <il>UDP : É aquele que não espera ninguém , só envia e quem recebeu, recebeu(jogo ao vivo).</il>
+                    </ul>
+                    <img src="/imgs/redes/tcp e udp.png" alt="" width="500px">
+        
+                </div> 
+            </details>
+        
+            <details>
+                <summary>Camada 5</summary>
+                <div id="camada5">
+                    <p>Camada 5 - Sessão : Camada é responsável por estabelecer e encerrar a conexão entre hosts(inicia e sincroniza).Além de registrar o log e realizar algumas tarefas de segurança.</p>
+                    <img src="/imgs/redes/sessao.png" alt="">
+                </div>  
+            </details>
+            
+            <details>
+                <summary>Camada 6</summary>
+                <div id="camada6">
+
+                </div>  
+            </details>
+            <details>
+                <summary>Camada 7</summary>
+                <div id="camada7">
+
+                </div> 
+            </details>
+         
             </div>
-        </div>
-        <div id="camada2">
-           <p> Camada 2 - Enlace ou Ligação (Fiscal): Ele observa se o pacote(meio físico) tem algum defeito em sua formatação e controla o fluxo com que os pacotes transmitidos para camadas superiores, após essa análise os dados recebidos assumem uma transmissão praticamente sem erros. Essa camada é conhecida pela função dos switches e é dividida em 2 subcamadas:</p>
-            <ul>
-                <il>MAC(Media Acces Control / Controle de acesso a midia):  Camada que possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço físico, conhecido como endereço MAC e por meio desse endereço que se identifica e envia os pacotes. </il>
-                <il>LLC(Logical Link Control / Controle de link lógico) : Camada que temos o controle de fluxo dos dados na rede para a próxima camada.</il>
-                <il>FCS (Frame Check Sequence / Sequência de Verificação de Quadro)</il>
-            </ul>
-
-        </div> 
-        <div id="camada3">
-            <p>Camada 3 - Rede : Verifica o emissor e receptor da mensagem. Se existirem muitas requisições para serem enviadas, eles podem priorizar quais serão enviadas primeiro e qual é o melhor caminho para enviar esses dados. Basicamente, ela controla o roteamento entre a origem e destino do pacote e após definição vai para o transporte.</p>
-            <p>IPV4 e IPV6</p>
-            <ul>
-                <il>IPV4</il>
-                <il>IPV6</il>
-            </ul>
-            <p>Diferença entre IP e MAC:</p>
-            <ul>
-                <il>MAC é o endereço físico de quem envia o pacote, ou seja, no envio nós passamos por vários dispositivos(roteador, switch, servidor e entre outros) e cada um tem seu MAC, ou seja, o endereço vai se mudar constantemente e até se perdendo no caminho de retorno. </il>
-                <il>IP é um indereço no qual não sofre alteração</il>
-            </ul>
-            <p>Máscara de Rede : </p>
-
-        </div>  
-        <div id="camada4">
-            <p>Camada 4 - Transporte: Camada que garante o envio e o recebimento dos pacotes vindos da camada 3. Ela gerencia o transporte dos pacotes para garantir o sucesso no envio e no recebimento de dados, com preocupação para que os dados sejam entregues com consistência, sem erros e duplicações.</p>
-            <p>Protocolos TCP e UDP:</p>
-            <ul>
-                <il>TCP :</il>
-                <il>UDP :</il>
-            </ul>
-
-
-Bem, mas para ocorrer o transporte de um pacote entre os computadores, é necessário que as máquinas consigam se comunicar. Isso é função da próxima camada.
-        </div>  
-        <div id="camada5">
-            <p>Camada 5 - Sessão : Camada é responsável por estabelecer e encerrar a conexão entre hosts(inicia e sincroniza).Além de registrar o log e realizar algumas tarefas de segurança.</p>
-
-        </div>  
-        <div id="camada6">
-
-        </div>  
-        <div id="camada7">
-
-        </div>  
-        </div>
         
 </body>
 </html>

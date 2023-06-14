@@ -1,17 +1,19 @@
-*{
+* {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair', serif;
     font-family: 'Wix Madefor Display', sans-serif;
-   
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(34, 34, 34);
-    color:white;
-    max-width: 1200px;
+    color: white;
+    width: 100%;
     margin: 0 auto;
     padding: 15px;
 }
-#exAssocitiva{
+
+#exAssocitiva {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +21,8 @@ body{
     text-align: center;
     gap: 20px;
 }
-header{
+
+header {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -27,7 +30,7 @@ header{
     align-items: center;
 }
 
-#title{
+#title {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -36,38 +39,38 @@ header{
     gap: 20px;
 }
 
-#title h1{
+#title h1 {
     font-weight: 200;
 }
 
-#title h1:hover{
-    color:rgb(78, 78, 239);
+#title h1:hover {
+    color: rgb(78, 78, 239);
     transition: (0.9s all);
 }
 
-il{
+il {
     display: inline-block;
     margin: 20px;
 }
 
-a{
+a {
     color: white;
     font-size: 16px;
 }
 
-a:hover{
-    color:rgb(78, 78, 239);
+a:hover {
+    color: rgb(78, 78, 239);
     transition: (0.9s all);
 }
 
-#projetos{
-    border: 2px solid rgb(78, 78, 239) ;
+#projetos {
+    border: 2px solid rgb(78, 78, 239);
     padding: 10px;
     border-radius: 15px;
 }
 
-#projetos:hover{
-    background-color:rgb(78, 78, 239);
+#projetos:hover {
+    background-color: rgb(78, 78, 239);
     color: white;
     transition: (0.9s all);
 }
@@ -75,33 +78,34 @@ a:hover{
 .loader {
     width: 50px;
     height: 40px;
-    background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
-              linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
-              linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+    background: linear-gradient(#0000 calc(1*100%/6), #fff 0 calc(3*100%/6), #0000 0),
+        linear-gradient(#0000 calc(2*100%/6), #fff 0 calc(4*100%/6), #0000 0),
+        linear-gradient(#0000 calc(3*100%/6), #fff 0 calc(5*100%/6), #0000 0);
     background-size: 10px 400%;
     background-repeat: no-repeat;
     animation: matrix 1s infinite linear;
-  }
-  
-  @keyframes matrix {
-    0% {
-      background-position: 0% 100%, 50% 100%, 100% 100%
-    }
-  
-    100% {
-      background-position: 0% 0%, 50% 0%, 100% 0%
-    }
-  }  
+}
 
-#apresentação{
+@keyframes matrix {
+    0% {
+        background-position: 0% 100%, 50% 100%, 100% 100%
+    }
+
+    100% {
+        background-position: 0% 0%, 50% 0%, 100% 0%
+    }
+}
+
+#apresentação {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    
+
 }
-#inicio{
+
+#inicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,69 +113,82 @@ a:hover{
     text-align: justify;
     gap: 10px;
 }
-main{
+
+main {
     font-size: 18px;
     display: flex;
     flex-direction: column;
     text-align: justify;
     justify-content: center;
     align-items: center;
-    
+
     width: 1200px;
 }
-#tipos{
+
+#tipos {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-#SQL{
+
+#SQL {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
     gap: 20px;
 }
-#escritaSQL{
+
+#escritaSQL {
     width: 50%;
 }
-#sqltipos{
+
+#sqltipos {
     width: 50%;
 }
-#sqltipos img{
+
+#sqltipos img {
     width: 580px;
     height: 300px;
     border-radius: 20px;
 }
-#NoSQL{
+
+#NoSQL {
     display: flex;
     flex-direction: row;
 }
-#imgNOSQL{
+
+#imgNOSQL {
     width: 50%;
 }
-#imgNOSQL img{
+
+#imgNOSQL img {
     width: 400px;
     height: 300px;
     border-radius: 30px;
     padding-left: 100px;
 }
-#EscritaNOSQL{
+
+#EscritaNOSQL {
     width: 50%;
 }
-#main1{
+
+#main1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
     justify-content: center;
 }
-#modeloConceito{
+
+#modeloConceito {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#tiposBancos{
+
+#tiposBancos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -179,13 +196,14 @@ main{
     gap: 15px;
 }
 
-#modeloLogico{
+#modeloLogico {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#imgLogico{
+
+#imgLogico {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,27 +211,21 @@ main{
     gap: 20px;
     text-align: center;
 }
-#imgLogico img{
+
+#imgLogico img {
     width: 500px;
     height: 300px;
     margin: 0;
 }
-#fisico{
+
+#fisico {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#entidade{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-}
-
-#relacionamento{
+#entidade {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +233,15 @@ main{
     text-align: justify;
 }
 
-#atributo{
+#relacionamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+#atributo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,7 +250,7 @@ main{
     text-align: justify;
 }
 
-#der{
+#der {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +258,7 @@ main{
     text-align: justify;
 }
 
-#Ds{
+#Ds {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,10 +266,12 @@ main{
     gap: 20px;
     text-align: justify;
 }
-img{
+
+img {
     border-radius: 20px;
 }
-#imagens{
+
+#imagens {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -257,14 +279,16 @@ img{
     align-items: center;
     margin-bottom: 20px;
 }
-#_forma{
+
+#_forma {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-#imgfoma1{
+
+#imgfoma1 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -272,19 +296,22 @@ img{
     align-items: center;
     gap: 20px;
 }
-#__forma{
+
+#__forma {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#___forma{
+
+#___forma {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#imgforma3{
+
+#imgforma3 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -292,26 +319,31 @@ img{
     align-items: center;
     gap: 20px;
 }
-#imgforma2{
+
+#imgforma2 {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
 }
 
-#aplicacaoPratica{
+#aplicacaoPratica {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 1200px;
 }
 
-#videoAplica{
+#videoAplica {
     margin: 0;
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
+}
+#Ds{
+    max-width: 1200px;
 }

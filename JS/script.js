@@ -97,7 +97,15 @@ document.addEventListener("DOMContentLoaded", function() {
     strings: ["Primeiro semestre ADS-SENAI", "Seja bem-vindo ao site de Guilherme Martins"],
     typeSpeed: 60,
     backSpeed: 60,
-    loop: false
+    loop: true
   });
 });
-
+document.querySelectorAll('a#smooth1').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+  
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
