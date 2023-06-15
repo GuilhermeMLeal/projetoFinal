@@ -2,6 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair', serif;
     font-family: 'Wix Madefor Display', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,6 +10,7 @@ body{
     color:white;
     max-width: 1200px;
     margin: 0 auto;
+    
     padding: 15px;
 }
 
@@ -18,6 +20,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+header li{
+    transition:0,6ms;
 }
 
 #title{
