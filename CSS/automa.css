@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair', serif;
     font-family: 'Wix Madefor Display', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -146,7 +146,9 @@ img{
     gap: 30px;
     margin-top: 20px;
 }
-
+header li{
+    transition:0,6ms;
+}
 
 #imgsSeman{
     display: flex;
