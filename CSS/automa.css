@@ -19,6 +19,7 @@ body{
     align-items: center;
     text-align: justify;
 }
+
 #inicio{
     display: flex;
     flex-direction: column;
@@ -128,7 +129,15 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
     
+}
+#pedestre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 #semantico1{
     display: flex;
@@ -175,8 +184,15 @@ header li{
     align-items: center;
     gap: 20px;
 }
-#tinkercad img{
+#exemplo{
     width: 800px;
+}
+#meioTinker{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 #robotica{
     display: flex;
