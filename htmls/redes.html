@@ -64,7 +64,7 @@
                 <ul>
                     <li>Topologia de Barramento = Todos os dispositivos são conectados a um único cabo em linha reta, chamado de barramento.</li> <br><br>
                     <li>Topologia em Anel = Os dispositivos são conectados em um formato de anel, onde cada dispositivo está conectado a outros dois dispositivos e ele pode percorrer por um único sentido.</li><br><br>
-                    <li>Topologia em Estrela = Todos os dispositivos são conectados a um dispositivo central(switch) e a partir dele vai enviar a informação para o dispositivo requisitado e devolver para quer fez a requisição .</li><br><br>
+                    <li>Topologia em Estrela = Todos os dispositivos são conectados a um dispositivo central(switch) e a partir dele vai enviar a informação para o dispositivo requisitado e devolver para quem fez a requisição .</li><br><br>
                     <il>Topologia em Estrela Estendida: É uma variação da topologia em estrela usada para conectar várias redes locais (LANs) em uma rede maior.</il><br><br>
                     <li>Topologia em Malha = Cada dispositivo está conectado a todos os outros dispositivos da rede, ou seja, você não precisa de um "intermediário". </li><br><br>
                   </ul>
@@ -80,8 +80,8 @@
                 <il>Fibra Óptica = Meio de transmissão, no qual utiliza fonte de luz(fotoelétrica) e sua propagação como meio de transmissão e quando chega esse sinal chega em outro dispositivo, o sinal é convertido novamente em sinais elétricos por meio de dispositivos chamados de transceptores ópticos. </il>
                 <il>Modem = Faz a conexão física de rede (ADSL, cabo metálico, fibra óptica, etc.) e distribui a internet para um dispositivo externo</il><br><br>
                 <il>Repetidor = Amplifica o sinal de um emissor antes de enviá-lo para o destinatário.</il>
-                <il>Firewall = Dispositivo de segurança que monitora o tráfego de rede de entrada e saída e decide permitir ou bloquear tráfegos, ou seja, o famoso (Firewall Window Defender é um exemplo)</il>
-                <il>Sniffer (farejador) = é um software ou hardware que permite ao usuário “farejar” ou monitorar o tráfego de internet em tempo real, capturando todos os dados que entram e saem de um computador.</il>
+                <il>Firewall = Dispositivo de segurança que monitora o tráfego de rede de entrada e saída e decide permitir ou bloquear tráfegos, ou seja, o famoso (Firewall Windows Defender é um exemplo)</il>
+                <il>Sniffer (farejador) = é um software ou hardware que permite ao usuário “farejar" ou monitorar o tráfego de internet em tempo real, capturando todos os dados que entram e saem de um computador.</il>
                 <il>VLAN (Virtual LAN) = Rede truncada divididas em diferentes setores até chegar no roteador, ou seja, dispositivos em diferentes segmentos podem se comunicar como se estivessem conectados à mesma rede física, mesmo que estejam em locais separados.</il>
             </ul>
         </div>
@@ -91,10 +91,10 @@
         <div id="modeloOSI">
             <h3>Modelo OSI e Tanenbaum</h3>
             <div id="imgsmodeloOsi">
-                <img src="/imgs/redes/modelo osi.jpg" alt="" width="500px" height="400px">
+                <img src="/imgs/redes/tcp ip.png" alt="" width="500px" height="400px">
                 <img src="/imgs/redes/osi.png" alt=""width="500px">
             </div>
-           
+           <p>Enquanto o modelo OSI é um modelo conceitual no qual representa uma rede de computadores, o modelo TCP/IP é um modelo na prática, cujo suas divisões são representadas por camada de física(física e enlace), camada de rede(rede), camada de transporte(transporte) e camada de aplicação(sessão,apresentação e aplicação). </p>
             <p>O Modelo OSI em si é divido em 7 partes, nas quais cada uma tem um objetivo e aplicação. Clique abaixo para vê-las: </p>
             <div id="camadasOSI">
             <details>
@@ -225,8 +225,12 @@
 
            
             </div>
-
+            <div id="osi1">
+                <h2>Projetos criados a partir de conhecimentos do modelo OSI:</h2>
+            </div>
+            
             <div id="sematic">
+                
                 <div id="semantico1">
                     <h3>Conexão Wireless com switch.</h3>
                     <div id="imgsSeman">
@@ -259,6 +263,6 @@
                 <video width="600" height="600" controls>
                     <source src="/imgs/redes/DHCP.mp4" type="video/mp4">
             </div>
-            <a href="#title" ><input type="button" id="voltar" value="MENU"></a>
+            <a href="#title" ><input type="button" id="voltar" value="INÍCIO"></a>
 </body>
 </html>
