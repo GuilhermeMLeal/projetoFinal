@@ -17,9 +17,9 @@
         <nav>
             <ul>
                 <a href="/htmls/home.html"><il>HOME</il></a>
-                <a href="#nada1"><il>SOBRE</il></a>
-                <a href="#nada2"><il>MATÉRIAS</il></a>
-                <a href="#" id="projetos"><il>PROJETOS</il></a>
+                <a href="#apresentação"><il>SOBRE</il></a>
+                <a href="#importantes" id="projetos"><il>FUNÇÕES</il></a>
+                
                <!-- <il><input type="checkbox" id="troca_cor"><il> -->
                     
             </ul>
@@ -37,6 +37,8 @@
            
             <img src="/imgs/ciencia de dados/undraw_visual_data_re_mxxo-PhotoRoom.png-PhotoRoom.png" alt="" width="600px">
         </div>
+        <div>
+            <h2>Assuntos tratados sobre Análise de Dados:</h2>
         <details>
             <summary>Escalas de avaliação de dados (Stanley Stevens)</summary>
             <div id="tiposEscala">
@@ -147,8 +149,12 @@
                 <h3>Parâmetros estatísticos usados para determinar o grau de variabilidade dos dados de um conjunto de valores.</h3>
                 <ul>
                 <il>Amplitude (tipoDado(var.max()-var.min())) : Definida como a diferença entre a maior e a menor observação de um conjunto de dados.</il><br><br>
-                <il>Variância (var()) : Determinada pela média dos quadrados das diferenças entre cada uma das observações e a média aritmética da amostra.</il><br><br>
-                <il>Desvio padrão (std()) : É uma medida que expressa o grau de dispersão de um conjunto de dados. Ou seja, o desvio padrão indica o quanto um conjunto de dados é uniforme (quanto mais próximo de 0, mais homogêneo serão os dados). </il><br><br>
+                <il>Variância (var()) : Uma medida de dispersão que mostra o quão distante cada valor desse conjunto está do valor central (médio).</il><br><br>
+                <div id="desvio">
+                    <il>Desvio padrão (std()) : É uma medida que expressa o grau de dispersão de um conjunto de dados, ou seja, o desvio padrão indica o quanto um conjunto de dados é uniforme (quanto mais próximo de 0, mais homogêneo serão os dados). </il>
+                    <img src="/imgs/ciencia de dados/desvio padrao.png" alt="">
+                </div>
+                
             </div>
             
             </ul>
@@ -156,31 +162,35 @@
         <details>
             <summary>Inferência</summary>
             <div id="inferenc">
-                <h3>Inferência</h3>
                 <h3>Distribuição Probabilística Binomial</h3>
                 <p>A curva de probabilidade binomial é caracterizada por dois parâmetros: a probabilidade de ocorrer o evento de interesse e o tamanho da amostra, ou seja, ele fala todas as probabilidades para todos os resultados possíveis para o tamanho definido da amostra.</p>
-                <p>Regressão logistica: colocamos em prática a inferência e separamos em grupos os dados coletados (classificador) em um gráfico de dispersão.</p><br><br>
+                <img src="/imgs/ciencia de dados/distribuição probabi.png" alt="">
+                <p>Regressão logistica: colocamos em prática a inferência e separamos em grupos os dados coletados (classificador) em um gráfico de dispersão.</p>
+                <img src="/imgs/ciencia de dados/regressao logistica.png" alt="">
             </div>
         </details>
         <details>
             <summary>Qui Quadrado</summary>
             <div id="qui">
                 <h3>Qui Quadrado</h3>
-            <p> A hipótese estatística do Qui-quadrado é um teste de independência entre variáveis categóricas, ou seja, se são associadas ou são independentes, uma da outra. </p>
+            <p> A hipótese estatística do Qui-quadrado é um teste de independência entre variáveis categóricas, ou seja, se há relação significativa ou não(H0 (hipótese nula)).</p>
             <ul>
                 <il>Teste Qui-quadrado de independência:Graus de liberdade = (número de linhas - 1) * (número de colunas - 1)</il><br><br>
-                <il>Teste Qui-quadrado de bondade de ajuste: Graus de liberdade = (número de categorias observadas - número de parâmetros estimados na distribuição teórica) - 1</il><br><br>
+                
             </ul>
+            <img src="/imgs/ciencia de dados/qui" alt="">
             <h3>Tipos de testes de amostra</h3>
             <ul>
-                <il>Kolmogorov-Smirnov (kstest()) : Verifica se uma amostra segue uma distribuição específica, comparando a função de distribuição acumulada</il><br><br>
-                <il>Shapiro-Wilk (shapiro()) : É usado para determinar se uma amostra vem ou não de uma distribuição normal .</il><br><br>
+                <il>Kolmogorov-Smirnov (kstest()) : Verifica se uma amostra vem de uma distribuição normal ou não, a partir da aceitação ou rejeição da hipótese nula.</il><br><br>
+                <il>Shapiro-Wilk (shapiro(x)) : Se p estiver de um certo nível de significância, vemos se temos evidências suficientes para dizer que os dados da amostra não vêm de uma distribuição normal.</il>
+                <p>Obs.: x é uma matriz de dados de amostra, na qual retorna uma estatística de teste e um valor p correspondente.</p><br><br>
                 <il>Anderson Darling (anderson()) : É um teste de qualidade de ajuste que mede o quão bem seus dados se ajustam a uma distribuição especificada.</il><br><br>
             </ul>
             </div>
             
         </details>
-                 
+            
+    </div>    
 
     <div id="importantes">
         <div id="funcoes">
@@ -222,7 +232,7 @@
             <div id="exponencial">
                 <div id="funcao">
                     <h3>Função exponencial</h3>
-                    <p>Variável que está no expoente e cuja base é sempre maior que zero e diferente de um. Sendo assim:</p>
+                    <p>É uma função que é contrária a logatimica, e seu próprio nome diz, ela diz respeito ao expoente de uma função. A Variável que está no expoente e cuja base é sempre maior que zero e diferente de um, ou seja, com o expoente você consegue descobrir diversos ponto em uma função em x e y(f(x)). Sendo assim:</p>
                     <img src="/imgs/ciencia de dados/exponencial1.png" alt="">
                 </div>
                 
@@ -230,9 +240,15 @@
             </div>
           <div id="juncaoLogLim">
             <div id="logaritmo">
-                <h3>Logaritmo </h3>
-                <p>Dois números reais positivos a e b, com a ≠ 0. O logaritmo de b na base a é o número x se, e somente se, a elevado a x for igual ao número b.</p>
-                <img src="/imgs/ciencia de dados/logaritmo.png" alt="" width="500px">
+                <div id="escritaLog">
+                    <h3>Logaritmo </h3>
+                    <p>É a uma operação na qual queremos descobrir o expoente que uma dada base deve ter para resultar em uma certa potência.Para calcular um logaritmo, temos que procurar um número que, quando elevamos a base, resulte no logaritmando, ou seja, o resultado tem que dar 36, que número elevando a base(6), vai dar 36? Logaritmo é 2.</p>
+                </div>
+                <div id="imgsLog">
+                    <img src="/imgs/ciencia de dados/logaritmo1.png" alt="" width="300px">
+                    <img src="/imgs/ciencia de dados/Funcao-logaritma.png" alt="">
+                </div>
+
             </div>
             <div id="limite">
                 <h3>Limites</h3>
@@ -256,19 +272,44 @@
                     
                     
                 </div>
+                
             </div>
+            <div id="regras">
+                <figure>
+                    <img src="/imgs/ciencia de dados/regras deriv.png" alt="">
+                    <figcaption>Funções com regras "prontas" para serem aplicadas em exercicios.</figcaption>
+                </figure>
+            
+            <figure>
+                <img src="/imgs/ciencia de dados/derivada.png" alt="">
+                <figcaption>Derivadas e seus tipos.</figcaption>
+            </figure>
+        </div>
             <div id="integral">
                 <div id="intTexto">
                     <h3>Integral </h3>
                     <p>Criada para calcular a área sob uma curva no plano cartesiano Conhecido por ser o contrário da derivada.</p>
                 
                     <ul>
-                        <il>Integral definida (intervalo de pontos a e b)</il><br><br>
-                        <il>Integral indefinida (não tem intervalo)</il><br><br>
+                        
+                    <div id="deriv">
+                        <il>Integral definida (intervalo de pontos a e b)</il>
+                        <img src="/imgs/ciencia de dados/integral definida.png" alt="" width="150px"><br><br>
+                    </div>
+                        
+                    <div id="deriv">
+                        <il>Integral indefinida (não tem intervalo)</il>
+                        <img src="/imgs/ciencia de dados/integral indefinida.png" alt="" width="150px"><br><br>
+                    </div>
+                        
                     </ul>
                 </div>
-                
-                    <img src="/imgs/ciencia de dados/integral.jpg" alt="">
+                <figure>
+                    <img src="/imgs/ciencia de dados/integral.jpg" alt=""width="400px">
+                    <figcaption>Exemplo de integral definida.</figcaption>
+                </figure>
+                    
+
                 </div>
                 
             </div>

@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <a href="/htmls/home.html"><il>INÍCIO</il></a>
-                <a href="#nada1"><il>SOBRE</il></a>
-                <a href="#nada2"><il>MATÉRIAS</il></a>
-                <a href="#" id="projetos"><il>PROJETOS</il></a>
+                <a href="#apresentação"><il>SOBRE</il></a>
+                <a href="#modeloOSI"><il>MEIO</il></a>
+                <a href="#sematic" id="projetos"><il>PROJETOS</il></a>
                 
                     
             </ul>
@@ -78,8 +78,11 @@
                 <il>Switch(controlador) = Ele permite que os dispositivos de rede se comuniquem entre si e com outras redes, criando uma rede de recursos compartilhados. </il>
                 <il>Placas de rede = Hardware que permite a troca de informações entre PC's, ou seja, controla todo envio e recebimento de dados entre equipamentos.</il>
                 <il>Fibra Óptica = Meio de transmissão, no qual utiliza fonte de luz(fotoelétrica) e sua propagação como meio de transmissão e quando chega esse sinal chega em outro dispositivo, o sinal é convertido novamente em sinais elétricos por meio de dispositivos chamados de transceptores ópticos. </il>
-                <il>Modem : Faz a conexão física de rede (ADSL, cabo metálico, fibra óptica, etc.) e distribui a internet para um dispositivo externo</il><br><br>
+                <il>Modem = Faz a conexão física de rede (ADSL, cabo metálico, fibra óptica, etc.) e distribui a internet para um dispositivo externo</il><br><br>
                 <il>Repetidor = Amplifica o sinal de um emissor antes de enviá-lo para o destinatário.</il>
+                <il>Firewall = Dispositivo de segurança que monitora o tráfego de rede de entrada e saída e decide permitir ou bloquear tráfegos, ou seja, o famoso (Firewall Window Defender é um exemplo)</il>
+                <il>Sniffer (farejador) = é um software ou hardware que permite ao usuário “farejar” ou monitorar o tráfego de internet em tempo real, capturando todos os dados que entram e saem de um computador.</il>
+                <il>VLAN (Virtual LAN) = Rede truncada divididas em diferentes setores até chegar no roteador, ou seja, dispositivos em diferentes segmentos podem se comunicar como se estivessem conectados à mesma rede física, mesmo que estejam em locais separados.</il>
             </ul>
         </div>
         <div>
@@ -92,7 +95,8 @@
                 <img src="/imgs/redes/osi.png" alt=""width="500px">
             </div>
            
-            <p>O Modelo OSI em si </p>
+            <p>O Modelo OSI em si é divido em 7 partes, nas quais cada uma tem um objetivo e aplicação. Clique abaixo para vê-las: </p>
+            <div id="camadasOSI">
             <details>
                 <summary>Camada 1</summary>
                 <div id="camada1">
@@ -100,6 +104,18 @@
                     <div id="parTrancado">
                         <img src="/imgs/redes/par trancado.png" alt="" width="400px">
                         <img src="/imgs/redes/par1 trancado.png" alt="" width="400px" >
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <p>Transmissão de dados:</p>
+                        <ul>
+                            <il>Simplex: Emissor envia porém não sabe se o receptor recebeu, um exemplo é a TV aberta.</il>
+                            <il>Half-duplex: Ocorre em ambas as direções(transmitir(emissor) e receber dados(receptor)), porém não ao mesmo tempo.</il>
+                            <il>Full-duplex : Dados transmitidos e recebidos simultaneamente, como na Internet e TV's cabo.</il>
+                        </ul>
                     </div>
                 <div>
             </details>
@@ -111,8 +127,11 @@
                          <il>MAC(Media Acces Control / Controle de acesso a midia):  Camada que possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço físico, conhecido como endereço MAC e por meio desse endereço que se identifica e envia os pacotes. </il>
                          <il>LLC(Logical Link Control / Controle de link lógico) : Camada que temos o controle de fluxo dos dados na rede para a próxima camada.</il>
                          <il>FCS (Frame Check Sequence / Sequência de Verificação de Quadro)</il>
+                         
                      </ul>
-         
+                     <div>
+                        <h3>Ethernet</h3>
+                    </div>
                  </div> 
             </details>
     
@@ -151,7 +170,7 @@
                     <p>DHCP : É o IP dinâmico, no qual o roteador promove automaticamente.</p>
                     <p>Observação : O roteador define o IP global através do DHCP.</p>
                     <img src="/imgs/redes/DHCP.png" alt="" width="400px">
-                    <p>DNS : Domain Name Server </p>
+                    
                     <p>Exemplo aplicação de todos os conceitos na camada 3:</p>
                     <img src="/imgs/redes/mac e ipv4.png" alt="">
                 </div>  
@@ -166,7 +185,7 @@
                         <il>TCP : É aquele no qual espera a confirmação até o dado chegar completo ao destinatário.</il>
                         <il>UDP : É aquele que não espera ninguém , só envia e quem recebeu, recebeu(jogo ao vivo).</il>
                     </ul>
-                    <img src="/imgs/redes/tcp e udp.png" alt="" width="500px">
+                    <img src="/imgs/redes/tcp e udp.png" alt="" width="800px">
         
                 </div> 
             </details>
@@ -182,17 +201,64 @@
             <details>
                 <summary>Camada 6</summary>
                 <div id="camada6">
-
+                    <p>Apresentação: É o tratamento dos dados, incluindo a criptografia, compressão e formatação de dados para a transmissão.</p>
                 </div>  
             </details>
             <details>
                 <summary>Camada 7</summary>
                 <div id="camada7">
-
+                    <p>Aplicação: Camada de consumo de dados, é nela que podemos enviar e-mails, transferir arquivos, acessar websites, conectar remotamente em outras máquinas, entre outras coisas </p>
+                    <h3>HTTP(Hypertext Transfer Protocol) e HTTPS(Hypertext Transfer Protocol Secure)</h3>
+                    <p> São os protocólos de comunicação com a World Wide Web, ou seja, permite que o usuário requisite algo através do HTTP para um servidor e irá obter a resposta solicitada(site, imagem, e muitas outras aplicações). Mas sua principal diferença é que:</p>
+                    <ul>
+                        <il>O HTTPS utiliza uma criptografia de dados entre a comunicação do usuário e servidor, além de utilizar protocólos SSL (Secure Sockets Layer) e o TLS (Transport Layer Security) para essa segurança.</il>
+                        <il>O HTTP não, ou seja, qualquer um pode interceptar o sinal e roubar esses dados.</il>
+                    </ul>
+                    <p>DNS : Domain Name Server(sistema de nomes de domínios) sua função não é hospedar sites ou aplicações , mas sim permitir que as requisições cheguem aos locais corretos, ou seja, ele que transforma o domínio(exemplo.com) do site em endereços IP (192.168.0.1). </p>
+                    <ul>
+                        <h3>Em domínio nós temos duas entidades muito importantes para efetuar o controle e organizar a utilização da Web</h3>
+                        <il>NIC.br (Núcleo de Informação e Coordenação do Ponto BR) : Administra dos registros de domínios sob o domínio de topo .br, ou seja, é responsável pela gestão de nomes de domínios no Brasil.</il>
+                        <il>CGI.br (Comitê Gestor da Internet no Brasil): Tem como objetivo promover a governança(formular princípios, diretrizes e políticas) da Internet no Brasil.</il>
+                    </ul>
                 </div> 
             </details>
-         
+
+           
             </div>
-        
+
+            <div id="sematic">
+                <div id="semantico1">
+                    <h3>Conexão Wireless com switch.</h3>
+                    <div id="imgsSeman">
+                        <a href="https://github.com/GuilhermeMLeal/Redes_Portifolio.git"><img src="/imgs/git.png" alt="" width="100px" id="git"></a>
+                        <img src="/imgs/redes/redes.png" alt="" width="300px" height="300px">
+                    </div>
+                </div>
+                <video width="600" height="600" controls>
+                    <source src="/imgs/redes/WIRELESS.mp4" type="video/mp4">
+            </div>
+            <div id="sematic">
+                <div id="semantico1">
+                    <h3>Criação de interação entre LAN's , a partir de um roteador.</h3>
+                    <div id="imgsSeman">
+                        <a href="https://github.com/GuilhermeMLeal/Redes_Portifolio.git"><img src="/imgs/git.png" alt="" width="100px" id="git"></a>
+                        <img src="/imgs/redes/redes.png" alt="" width="300px" height="300px">
+                    </div>
+                </div>
+                <video width="600" height="600" controls>
+                    <source src="/imgs/redes/exemplo 1 redes.mp4" type="video/mp4">
+            </div>
+            <div id="sematic">
+                <div id="semantico1">
+                    <h3>CIRCUITO DHCP</h3>
+                    <div id="imgsSeman">
+                        <a href="https://github.com/GuilhermeMLeal/Redes_Portifolio.git"><img src="/imgs/git.png" alt="" width="100px" id="git"></a>
+                        <img src="/imgs/redes/redes.png" alt="" width="300px" height="300px">
+                    </div>
+                </div>
+                <video width="600" height="600" controls>
+                    <source src="/imgs/redes/DHCP.mp4" type="video/mp4">
+            </div>
+            <a href="#title" ><input type="button" id="voltar" value="MENU"></a>
 </body>
 </html>

@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair', serif;
     font-family: 'Wix Madefor Display', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -37,6 +37,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+header li{
+    transition:0,6ms;
 }
 #classes{
     display: flex;
@@ -93,6 +96,46 @@ a:hover{
 }
 
 #projetos:hover{
+    background-color:rgb(78, 78, 239);
+    color: white;
+    transition: (0.9s all);
+}
+
+#voltar{
+    border: 2px solid rgb(78, 78, 239) ;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+#semantico1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+#sematic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+#git{
+    filter: invert(1);
+}
+
+#imgsSeman{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#voltar:hover{
     background-color:rgb(78, 78, 239);
     color: white;
     transition: (0.9s all);
