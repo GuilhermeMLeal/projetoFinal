@@ -100,17 +100,15 @@
             <details>
                 <summary>Camada 1</summary>
                 <div id="camada1">
-                    <p>Camada 1 - Física: Camada física é o caminho que os pacotes percorrem para chegar ao destino(transmissão fibra óptica, wireless e cabos de rede convencionais(cobre)), ou seja, os dados são transmitidos e processados , adiante são passados para a próxima camada .</p>
-                    <div id="parTrancado">
-                        <img src="/imgs/redes/par trancado.png" alt="" width="400px">
-                        <img src="/imgs/redes/par1 trancado.png" alt="" width="400px" >
-
+                    <p>Camada 1 - Física: Camada física é o caminho que os pacotes percorrem para chegar ao destino(transmissão fibra óptica, cabos de rede e muitos outros).</p>
+                    
+                    
+                    <div>
+                        <h3>Ethernet(IEEE 802.3)</h3>
+                        <p>É um protocolo de conexão que gerencia como os dispositivos e computadores se comunicam em uma rede local (LAN).</p>
                     </div>
                     <div>
-
-                    </div>
-                    <div>
-                        <p>Transmissão de dados:</p>
+                        <p>Transmissão de dados Ethernet:</p>
                         <ul>
                             <il>Simplex: Emissor envia porém não sabe se o receptor recebeu, um exemplo é a TV aberta.</il>
                             <il>Half-duplex: Ocorre em ambas as direções(transmitir(emissor) e receber dados(receptor)), porém não ao mesmo tempo.</il>
@@ -122,23 +120,21 @@
             <details>
                 <summary>Camada 2</summary>
                 <div id="camada2">
-                    <p> Camada 2 - Enlace ou Ligação (Fiscal): Ele observa se o pacote(meio físico) tem algum defeito em sua formatação e controla o fluxo com que os pacotes transmitidos para camadas superiores, após essa análise os dados recebidos assumem uma transmissão praticamente sem erros. Essa camada é conhecida pela função dos switches e é dividida em 2 subcamadas:</p>
+                    <p> Camada 2 - Enlace ou Ligação (Fiscal): Ele observa se o pacote(meio físico) se tem algum defeito em sua formatação e controla o fluxo com que os pacotes transmitidos. Essa camada é conhecida pela função dos switches e é dividida em 2 subcamadas:</p>
                      <ul>
-                         <il>MAC(Media Acces Control / Controle de acesso a midia):  Camada que possibilita a conexão de diversos computadores em uma rede. Cada máquina conectada na rede tem um endereço físico, conhecido como endereço MAC e por meio desse endereço que se identifica e envia os pacotes. </il>
+                         <il>MAC(Media Acces Control / Controle de acesso a midia): Cada máquina conectada na rede tem um endereço físico, por meio desse endereço que se identifica e envia os pacotes. </il>
                          <il>LLC(Logical Link Control / Controle de link lógico) : Camada que temos o controle de fluxo dos dados na rede para a próxima camada.</il>
-                         <il>FCS (Frame Check Sequence / Sequência de Verificação de Quadro)</il>
+                         
                          
                      </ul>
-                     <div>
-                        <h3>Ethernet</h3>
-                    </div>
+                     
                  </div> 
             </details>
     
             <details>
                 <summary>Camada 3</summary>
                 <div id="camada3">
-                    <p>Camada 3 - Rede : Verifica o emissor e receptor da mensagem. Se existirem muitas requisições para serem enviadas, eles podem priorizar quais serão enviadas primeiro e qual é o melhor caminho para enviar esses dados. Basicamente, ela controla o roteamento entre a origem e destino do pacote e após definição vai para o transporte.</p>
+                    <p>Camada 3 - Rede : Verifica o emissor e receptor da mensagem. Basicamente, ela controla o roteamento entre a origem e destino do pacote e após definição, vai para o transporte.</p>
                     <p>IPV4 e IPV6</p>
                     <ul>
                         <il>IPV4(Internet Protocol version 4): É mais usado atualmente, possui IP de 32 bits(quatro grupos de números decimais / 8 bits para cada grupo separados por pontos), além de poder fazer encapsulamento de dados e depois sobe o arquivo inteiro.</il>
@@ -162,8 +158,8 @@
                     
                     <p>Diferença entre IP e MAC:</p>
                     <ul>
-                        <il>MAC é o endereço físico de quem envia o pacote, ou seja, no envio nós passamos por vários dispositivos(roteador, switch, servidor e entre outros) e cada um tem seu MAC, ou seja, o endereço vai se mudar constantemente e até se perdendo no caminho de retorno. </il>
-                        <il>IP é um indereço no qual não sofre alteração depois de definido.</il>
+                        <il>O envio no MAC nós passamos por vários dispositivos(roteador, switch, servidor e entre outros) e cada um tem seu endereçamento, ou seja, o endereço vai se mudar constantemente e até se perdendo no caminho de retorno. </il>
+                        <il>IP é um endereço no qual não sofre alteração depois de definido.</il>
                     </ul>
                     <p>Máscara de Rede : Determina a porção de um endereço IP que representa a rede e a porção que representa os dispositivos (hosts) na rede.</p>
                     <img src="/imgs/redes/MASCARA DE REDE.png" alt="" width="400px">
@@ -193,7 +189,7 @@
             <details>
                 <summary>Camada 5</summary>
                 <div id="camada5">
-                    <p>Camada 5 - Sessão : Camada é responsável por estabelecer e encerrar a conexão entre hosts(inicia e sincroniza).Além de registrar o log e realizar algumas tarefas de segurança.</p>
+                    <p>Camada 5 - Sessão : Camada é responsável por estabelecer e encerrar a conexão entre hosts(inicia e sincroniza).</p>
                     <img src="/imgs/redes/sessao.png" alt="">
                 </div>  
             </details>
@@ -209,12 +205,12 @@
                 <div id="camada7">
                     <p>Aplicação: Camada de consumo de dados, é nela que podemos enviar e-mails, transferir arquivos, acessar websites, conectar remotamente em outras máquinas, entre outras coisas </p>
                     <h3>HTTP(Hypertext Transfer Protocol) e HTTPS(Hypertext Transfer Protocol Secure)</h3>
-                    <p> São os protocólos de comunicação com a World Wide Web, ou seja, permite que o usuário requisite algo através do HTTP para um servidor e irá obter a resposta solicitada(site, imagem, e muitas outras aplicações). Mas sua principal diferença é que:</p>
+                    <p> São os protocólos de comunicação com o www, ou seja, ele que permite que o usuário requisite algo através do HTTP para um servidor e irá obter a resposta solicitada(site, imagem, e muitas outras aplicações). Mas sua principal diferença é que:</p>
                     <ul>
-                        <il>O HTTPS utiliza uma criptografia de dados entre a comunicação do usuário e servidor, além de utilizar protocólos SSL (Secure Sockets Layer) e o TLS (Transport Layer Security) para essa segurança.</il>
+                        <il>O HTTPS utiliza uma criptografia de dados entre a comunicação do usuário e servidor, utilizando protocolos SSL (Secure Sockets Layer) e o TLS (Transport Layer Security) para essa segurança.</il>
                         <il>O HTTP não, ou seja, qualquer um pode interceptar o sinal e roubar esses dados.</il>
                     </ul>
-                    <p>DNS : Domain Name Server(sistema de nomes de domínios) sua função não é hospedar sites ou aplicações , mas sim permitir que as requisições cheguem aos locais corretos, ou seja, ele que transforma o domínio(exemplo.com) do site em endereços IP (192.168.0.1). </p>
+                    <p>DNS : Domain Name Server(sistema de nomes de domínios) permite que as requisições cheguem aos locais corretos, ou seja, ele que transforma o domínio(exemplo.com) do site em endereços IP (192.168.0.1). </p>
                     <ul>
                         <h3>Em domínio nós temos duas entidades muito importantes para efetuar o controle e organizar a utilização da Web</h3>
                         <il>NIC.br (Núcleo de Informação e Coordenação do Ponto BR) : Administra dos registros de domínios sob o domínio de topo .br, ou seja, é responsável pela gestão de nomes de domínios no Brasil.</il>
@@ -226,7 +222,7 @@
            
             </div>
             <div id="osi1">
-                <h2>Projetos criados a partir de conhecimentos do modelo OSI:</h2>
+                <h2>Projetos criados a partir de conhecimentos do modelo TCP/IP:</h2>
             </div>
             
             <div id="sematic">

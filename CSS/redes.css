@@ -37,6 +37,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 header li{
     transition:0,6ms;

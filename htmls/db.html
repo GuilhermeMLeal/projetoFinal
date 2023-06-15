@@ -37,7 +37,7 @@
         </div>
         <div id="tipos">
             <h2>Tipos e conceitos sobre DB's</h2>
-            <p>Basicamente, em Banco de Dados nós possuímos uma gama imensa de tipos e diferentes formas de trabalhar. Essa gama normalmente é trabalhada e com as devidas plataformas, conhecidas como SGBD's (Sistema de Gerenciamento de Banco de Dados), estando no mercado de forma paga ou gratuita. Essa grande escada de tipos de Bancos são representadas por Banco de Dados Orientado a Objeto, Autônomo, Documentos, em Cache, em Cloud, porém irei apresentar 2 que foram enfatizados no semestre, sendo eles:</p>
+            <p>Basicamente, em Banco de Dados nós possuímos uma gama imensa de tipos e diferentes formas de trabalhar. Essa gama normalmente é trabalhada e com as devidas plataformas, conhecidas como SGBD's (Sistema de Gerenciamento de Banco de Dados), estando no mercado de forma paga ou gratuita. Essa grande escala de tipos de Bancos são representadas por Banco de Dados Orientado a Objeto, Autônomo, Documentos, em Cache, em Cloud, porém irei apresentar 2 que foram enfatizados no semestre, sendo eles:</p>
             <div id="SQL">
                 <div id="escritaSQL">
                     <h3>Bancos de dados relacional(SQL)</h3>
@@ -107,7 +107,7 @@
                 </div>
                 <h3>Modelos e criação de Banco de Dados:</h3>
                 <h3>MER e DER</h3>
-                <p>MER é  um modelo conceitual utilizado para descrever os objetos (entidades) envolvidos em um domínio de negócios, com suas características (atributos) e como elas se relacionam entre si (relacionamentos).</p>
+                <p>MER é  um modelo conceitual utilizado para descrever os objetos (entidades), com suas características (atributos) e como elas se relacionam entre si (relacionamentos).</p>
               
                 <div id="entidade">
                     <h3>Entidade</h3>
@@ -116,7 +116,7 @@
                 </div>
                 <div id="relacionamento">
                     <h3>Relacionamento</h3>
-                    <p>Relacionamento é basicamente a interação de entidades, são nomeados com verbos ou expressões que representam a o "relacionamento" entre elas .Esse relacionamento pode ser representado de duas formas: Forte e Fraco.</p>
+                    <p>Relacionamento é basicamente a interação de entidades, são nomeados com verbos ou expressões que representam a o "relacionamento" entre elas.  Esse relacionamento pode ser representado de duas formas: Forte e Fraco.</p>
                     <ul>
                         <il>Relacionamento forte = Se a entidade a qual possui um relacionamento for uma entidade com valor igual(forte - forte / fraco - fraco). </il><br><br>
                         <il>Relacionamento fraco = Caso se a entidade for distinta (forte - fraca).</il><br><br>
@@ -182,7 +182,7 @@
                 <div id="__forma">
                     <h3>2º forma normal</h3>
                     <p>Não posso conter dependência parcial( atributos que não são chave dependem unicamente da chave primária da tabela ) e deve pertencer a 1º forma normal.</p> 
-                    <p>Nessa forma os atributos da tabela dependem inteiramente da chave primária. Os atributos que não dependem ou dependem parcialmente da chave são associados a uma outra tabela, agora com uma relação clara com a chave primária da tabela original, entretanto a chave primária é convertida em chave estrangeira (ou externa) em uma nova tabela.</p>
+                    <p>Os atributos que não dependem ou dependem parcialmente da chave são associados a uma outra tabela, agora com uma relação "certa" com a chave primária da tabela original, entretanto a chave primária é convertida em chave estrangeira (ou externa) em uma nova tabela.</p>
                     <figure id="imgforma2">
                         <img src="/imgs/banco/2 forma normal.png" alt="" height="300px" width="700px">
                         <figcaption>Nessa situação podemos ver a criação de novas tabelas por conta dessa não dependência/ parcial , que é retratada no presente exemplo. Quando percebemos que o empregado não está ligado diretamente ao projeto, mas sim as suas horas no próprio, portanto foi criado mais 2 tabelas para que cada um tenha uma representatividade (PK e FK) e nenhum dependa de modo parcial.</figcaption>
